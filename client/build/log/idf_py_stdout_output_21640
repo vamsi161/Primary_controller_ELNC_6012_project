@@ -1,0 +1,1674 @@
+ets Jul�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2025 17:34:53[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=194f8h (103672) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=00029520 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=00029544 vaddr=3ffb0000 size=03eb4h ( 16052) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=0002d400 vaddr=40080000 size=02c18h ( 11288) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=848d0h (542928) map[0m
+[0;32mI (330) esp_image: segment 5: paddr=000b48f8 vaddr=40082c18 size=14b80h ( 84864) load[0m
+[0;32mI (374) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (374) boot: Disabling RNG early entropy source...[0m
+[0;32mI (385) cpu_start: Multicore app[0m
+[0;32mI (393) cpu_start: Pro cpu start user code[0m
+[0;32mI (393) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (393) app_init: Application information:[0m
+[0;32mI (393) app_init: Project name:     client[0m
+[0;32mI (397) app_init: App version:      1[0m
+[0;32mI (400) app_init: Compile time:     Jun 25 2025 11:44:25[0m
+[0;32mI (405) app_init: ELF file SHA256:  51e37f9ef...[0m
+[0;32mI (410) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (414) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (417) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (421) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (425) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (432) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (437) heap_init: At 3FFB8170 len 00027E90 (159 KiB): DRAM[0m
+[0;32mI (442) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (447) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (453) heap_init: At 40097798 len 00008868 (34 KiB): IRAM[0m
+[0;32mI (460) spi_flash: detected chip: generic[0m
+[0;32mI (462) spi_flash: flash io: dio[0m
+[0;33mW (465) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (478) main_task: Started on CPU0[0m
+[0;32mI (488) main_task: Calling app_main()[0m
+[0;32mI (518) example_connect: Start example_connect.[0m
+[0;32mI (528) wifi:wifi driver task: 3ffbfd58, prio:23, stack:6656, core=0[0m
+[0;32mI (538) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (538) wifi:wifi certification version: v7.0[0m
+[0;32mI (538) wifi:config NVS flash: enabled[0m
+[0;32mI (538) wifi:config nano formatting: disabled[0m
+[0;32mI (548) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (548) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (558) wifi:Init management short buffer num: 32[0m
+[0;32mI (558) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (568) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (568) wifi:Init static rx buffer num: 10[0m
+[0;32mI (568) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (578) wifi_init: rx ba win: 6[0m
+[0;32mI (578) wifi_init: accept mbox: 6[0m
+[0;32mI (578) wifi_init: tcpip mbox: 32[0m
+[0;32mI (588) wifi_init: udp mbox: 6[0m
+[0;32mI (588) wifi_init: tcp mbox: 6[0m
+[0;32mI (588) wifi_init: tcp tx win: 5760[0m
+[0;32mI (598) wifi_init: tcp rx win: 5760[0m
+[0;32mI (598) wifi_init: tcp mss: 1440[0m
+[0;32mI (598) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (598) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (608) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (688) wifi:mode : sta (38:18:2b:80:11:38)[0m
+[0;32mI (688) wifi:enable tsf[0m
+[0;32mI (688) example_connect: Connecting to The Watling Boys...[0m
+[0;33mW (688) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (698) example_connect: Waiting for IP(s)[0m
+[0;32mI (3358) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3358) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3378) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3378) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3408) wifi:connected with The Watling Boys, aid = 28, channel 1, BW20, bssid = 78:8d:af:2d:e5:84[0m
+[0;32mI (3408) wifi:security: WPA2-PSK, phy: bgn, rssi: -52[0m
+[0;32mI (3418) wifi:pm start, type: 1[0m
+
+[0;32mI (3418) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3468) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4498) wifi:<ba-add>idx:0 (ifx:0, 78:8d:af:2d:e5:84), tid:7, ssn:1, winSize:64[0m
+[0;32mI (4518) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:3a18:2bff:fe80:1138, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5208) wifi:<ba-add>idx:1 (ifx:0, 78:8d:af:2d:e5:84), tid:0, ssn:1, winSize:64[0m
+[0;32mI (5508) esp_netif_handlers: example_netif_sta ip: 192.168.2.214, mask: 255.255.255.0, gw: 192.168.2.1[0m
+[0;32mI (5508) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.2.214[0m
+[0;32mI (5508) example_common: Connected to example_netif_sta[0m
+[0;32mI (5518) example_common: - IPv4 address: 192.168.2.214,[0m
+[0;32mI (5518) example_common: - IPv6 address: fe80:0000:0000:0000:3a18:2bff:fe80:1138, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5538) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (5928) example: Successfully connected[0m
+[0;32mI (6548) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (6548) example: 01[0m
+[0;32mI (7058) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (7058) example: 01[0m
+[0;32mI (7538) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (7538) example: 01[0m
+[0;32mI (8078) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (8078) example: 01[0m
+[0;32mI (8538) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (8538) example: 01[0m
+[0;32mI (9098) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (9108) example: 01[0m
+[0;32mI (9538) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (9538) example: 01[0m
+[0;32mI (10128) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (10128) example: 01[0m
+[0;32mI (10638) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (10638) example: 011[0m
+[0;32mI (11148) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (11148) example: 011[0m
+[0;32mI (11658) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (11658) example: 011[0m
+[0;32mI (12068) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (12068) example: 011[0m
+[0;32mI (12588) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (12588) example: 011[0m
+[0;32mI (13098) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (13098) example: 011[0m
+[0;32mI (13538) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (13538) example: 011[0m
+[0;32mI (14118) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (14118) example: 01[0m
+[0;32mI (14628) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (14628) example: 01[0m
+[0;32mI (15148) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (15148) example: 01[0m
+[0;32mI (15348) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (15348) example: 021[0m
+[0;32mI (15658) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (15658) example: 01[0m
+[0;32mI (15868) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (15868) example: 021[0m
+[0;32mI (16068) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (16068) example: 01[0m
+[0;32mI (16068) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (16078) example: 021[0m
+[0;32mI (16578) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (16578) example: 01[0m
+[0;32mI (16588) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (16588) example: 021[0m
+[0;32mI (17088) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (17088) example: 01[0m
+[0;32mI (17308) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (17308) example: 021[0m
+[0;32mI (17608) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (17608) example: 01[0m
+[0;32mI (17808) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (17808) example: 021[0m
+[0;32mI (18118) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (18118) example: 01[0m
+[0;32mI (18318) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (18318) example: 021[0m
+[0;32mI (18628) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (18628) example: 01[0m
+[0;32mI (18828) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (18828) example: 021[0m
+[0;32mI (19138) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (19138) example: 01[0m
+[0;32mI (19348) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (19348) example: 021[0m
+[0;32mI (19648) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (19648) example: 01[0m
+[0;32mI (19858) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (19858) example: 021[0m
+[0;32mI (20058) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (20058) example: 01[0m
+[0;32mI (20068) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (20068) example: 021[0m
+[0;32mI (20578) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (20578) example: 01[0m
+[0;32mI (20588) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (20588) example: 021[0m
+[0;32mI (21088) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (21088) example: 01[0m
+[0;32mI (21088) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (21088) example: 021[0m
+[0;32mI (21598) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (21598) example: 01[0m
+[0;32mI (21798) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (21798) example: 021[0m
+[0;32mI (22108) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (22108) example: 01[0m
+[0;32mI (22308) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (22308) example: 021[0m
+[0;32mI (22618) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (22618) example: 01[0m
+[0;32mI (22828) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (22828) example: 021[0m
+[0;32mI (23138) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (23138) example: 01[0m
+[0;32mI (23338) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (23338) example: 021[0m
+[0;32mI (23638) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (23648) example: 01[0m
+[0;32mI (23858) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (23858) example: 021[0m
+[0;32mI (24058) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (24058) example: 01[0m
+[0;32mI (24568) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (24568) example: 01[0m
+[0;32mI (25078) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (25078) example: 01[0m
+[0;32mI (25588) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (25588) example: 01[0m
+[0;32mI (26108) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (26108) example: 01[0m
+[0;32mI (26608) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (26618) example: 01[0m
+[0;32mI (27128) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (27128) example: 01[0m
+[0;32mI (27638) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (27638) example: 01[0m
+[0;32mI (28148) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (28148) example: 01[0m
+[0;32mI (28558) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (28558) example: 01[0m
+[0;32mI (29068) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (29068) example: 01[0m
+[0;32mI (29578) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (29588) example: 01[0m
+[0;32mI (30108) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (30108) example: 01[0m
+[0;32mI (30608) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (30608) example: 01[0m
+[0;32mI (31118) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (31118) example: 01[0m
+[0;32mI (31318) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (31328) example: 021[0m
+[0;32mI (31628) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (31638) example: 01[0m
+[0;32mI (31838) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (31838) example: 021[0m
+[0;32mI (32138) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (32148) example: 01[0m
+[0;32mI (32348) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (32348) example: 021[0m
+[0;32mI (32658) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (32658) example: 01[0m
+[0;32mI (32868) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (32868) example: 021[0m
+[0;32mI (33078) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (33078) example: 01[0m
+[0;32mI (33118) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (33118) example: 021[0m
+[0;32mI (33578) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (33588) example: 01[0m
+[0;32mI (33588) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (33588) example: 021[0m
+[0;32mI (34088) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (34088) example: 01[0m
+[0;32mI (34598) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (34598) example: 01[0m
+[0;32mI (35128) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (35128) example: 01[0m
+[0;32mI (35628) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (35628) example: 01[0m
+[0;32mI (36138) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (36138) example: 01[0m
+[0;32mI (36648) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (36648) example: 01[0m
+[0;32mI (37058) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (37058) example: 01[0m
+[0;32mI (37568) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (37568) example: 01[0m
+[0;32mI (38088) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (38088) example: 01[0m
+[0;32mI (38598) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (38598) example: 01[0m
+[0;32mI (39048) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (39048) example: 01[0m
+[0;32mI (39618) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (39618) example: 01[0m
+[0;32mI (40128) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (40128) example: 01[0m
+[0;32mI (40638) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (40638) example: 01[0m
+[0;32mI (41048) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (41048) example: 01[0m
+[0;32mI (41568) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (41568) example: 01[0m
+[0;32mI (42078) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (42078) example: 01[0m
+[0;32mI (42588) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (42588) example: 01[0m
+[0;32mI (43098) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (43098) example: 01[0m
+[0;32mI (43608) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (43608) example: 01[0m
+[0;32mI (44128) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (44128) example: 01[0m
+[0;32mI (44638) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (44638) example: 01[0m
+[0;32mI (45148) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (45148) example: 01[0m
+[0;32mI (45558) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (45558) example: 01[0m
+[0;32mI (46078) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (46078) example: 01[0m
+[0;32mI (46578) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (46578) example: 01[0m
+[0;32mI (47098) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (47098) example: 01[0m
+[0;32mI (47608) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (47608) example: 01[0m
+[0;32mI (48118) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (48118) example: 01[0m
+[0;32mI (48628) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (48628) example: 01[0m
+[0;32mI (49138) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (49138) example: 01[0m
+[0;32mI (49658) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (49658) example: 01[0m
+[0;32mI (50058) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (50068) example: 01[0m
+[0;32mI (50578) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (50578) example: 01[0m
+[0;32mI (51088) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (51088) example: 01[0m
+[0;32mI (51598) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (51598) example: 01[0m
+[0;32mI (52108) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (52108) example: 01[0m
+[0;32mI (52618) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (52628) example: 01[0m
+[0;32mI (53138) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (53138) example: 01[0m
+[0;32mI (53648) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (53648) example: 01[0m
+[0;32mI (54058) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (54058) example: 01[0m
+[0;32mI (54568) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (54568) example: 01[0m
+[0;32mI (55078) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (55078) example: 01[0m
+[0;32mI (55588) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (55598) example: 01[0m
+[0;32mI (56108) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (56108) example: 01[0m
+[0;32mI (56618) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (56618) example: 01[0m
+[0;32mI (57128) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (57128) example: 01[0m
+[0;32mI (57638) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (57638) example: 01[0m
+[0;32mI (58158) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (58158) example: 01[0m
+[0;32mI (58558) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (58558) example: 01[0m
+[0;32mI (59078) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (59078) example: 01[0m
+[0;32mI (59588) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (59588) example: 01[0m
+[0;32mI (60098) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (60098) example: 01[0m
+[0;32mI (60608) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (60608) example: 01[0m
+[0;32mI (61118) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (61118) example: 01[0m
+[0;32mI (61638) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (61638) example: 01[0m
+[0;32mI (62148) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (62148) example: 01[0m
+[0;32mI (62658) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (62658) example: 01[0m
+[0;32mI (63288) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (63288) example: 01[0m
+[0;32mI (63678) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (63688) example: 01[0m
+[0;32mI (64298) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (64298) example: 01[0m
+[0;32mI (64708) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (64708) example: 01[0m
+[0;32mI (65218) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (65218) example: 01[0m
+[0;32mI (65728) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (65728) example: 01[0m
+[0;32mI (66178) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (66178) example: 01[0m
+[0;32mI (66758) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (66758) example: 01[0m
+[0;32mI (67178) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (67178) example: 01[0m
+[0;32mI (67778) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (67778) example: 01[0m
+[0;32mI (68188) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (68188) example: 01[0m
+[0;32mI (68698) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (68698) example: 01[0m
+[0;32mI (69208) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (69208) example: 01[0m
+[0;32mI (69728) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (69728) example: 01[0m
+[0;32mI (70238) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (70238) example: 01[0m
+[0;32mI (70678) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (70678) example: 01[0m
+[0;32mI (71258) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (71258) example: 01[0m
+[0;32mI (71878) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (71878) example: 01[0m
+[0;32mI (72388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (72388) example: 01[0m
+[0;32mI (72798) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (72798) example: 01[0m
+[0;32mI (73308) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (73308) example: 01[0m
+[0;32mI (73818) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (73828) example: 01[0m
+[0;32mI (74338) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (74338) example: 01[0m
+[0;32mI (74848) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (74848) example: 01[0m
+[0;32mI (75358) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (75358) example: 01[0m
+[0;32mI (75868) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (75868) example: 01[0m
+[0;32mI (76378) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (76378) example: 01[0m
+[0;32mI (76898) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (76898) example: 01[0m
+[0;32mI (77298) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (77298) example: 01[0m
+[0;32mI (77818) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (77818) example: 01[0m
+[0;32mI (78328) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (78328) example: 01[0m
+[0;32mI (78838) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (78838) example: 01[0m
+[0;32mI (79348) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (79348) example: 01[0m
+[0;32mI (79858) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (79858) example: 01[0m
+[0;32mI (80378) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (80378) example: 01[0m
+[0;32mI (80888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (80888) example: 01[0m
+[0;32mI (81298) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (81298) example: 01[0m
+[0;32mI (81808) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (81808) example: 01[0m
+[0;32mI (82318) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (82318) example: 01[0m
+[0;32mI (82828) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (82838) example: 01[0m
+[0;32mI (83348) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (83348) example: 01[0m
+[0;32mI (83868) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (83868) example: 01[0m
+[0;32mI (84368) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (84368) example: 01[0m
+[0;32mI (84818) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (84818) example: 01[0m
+[0;32mI (85388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (85388) example: 01[0m
+[0;32mI (85828) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (85828) example: 01[0m
+[0;32mI (86318) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (86318) example: 01[0m
+[0;32mI (86828) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (86828) example: 01[0m
+[0;32mI (87338) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (87338) example: 01[0m
+[0;32mI (87848) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (87848) example: 01[0m
+[0;32mI (88358) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (88358) example: 01[0m
+[0;32mI (88908) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (88908) example: 01[0m
+[0;32mI (89388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (89388) example: 01[0m
+[0;32mI (89898) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (89898) example: 01[0m
+[0;32mI (90308) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (90308) example: 01[0m
+[0;32mI (90818) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (90818) example: 01[0m
+[0;32mI (91328) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (91328) example: 01[0m
+[0;32mI (91848) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (91848) example: 01[0m
+[0;32mI (92358) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (92358) example: 01[0m
+[0;32mI (92878) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (92878) example: 01[0m
+[0;32mI (93388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (93388) example: 01[0m
+[0;32mI (93898) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (93898) example: 01[0m
+[0;32mI (94298) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (94298) example: 01[0m
+[0;32mI (94808) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (94818) example: 01[0m
+[0;32mI (95328) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (95328) example: 01[0m
+[0;32mI (95838) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (95838) example: 01[0m
+[0;32mI (96348) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (96348) example: 01[0m
+[0;32mI (96858) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (96858) example: 01[0m
+[0;32mI (97378) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (97378) example: 01[0m
+[0;32mI (97888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (97888) example: 01[0m
+[0;32mI (98398) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (98398) example: 01[0m
+[0;32mI (98808) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (98808) example: 01[0m
+[0;32mI (99318) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (99318) example: 01[0m
+[0;32mI (99828) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (99828) example: 01[0m
+[0;32mI (100338) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (100348) example: 01[0m
+[0;32mI (100858) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (100858) example: 01[0m
+[0;32mI (101368) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (101368) example: 01[0m
+[0;32mI (101878) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (101878) example: 01[0m
+[0;32mI (102388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (102388) example: 01[0m
+[0;32mI (102798) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (102798) example: 01[0m
+[0;32mI (103318) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (103318) example: 01[0m
+[0;32mI (103828) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (103828) example: 01[0m
+[0;32mI (104338) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (104338) example: 01[0m
+[0;32mI (104848) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (104848) example: 01[0m
+[0;32mI (105358) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (105358) example: 01[0m
+[0;32mI (105868) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (105878) example: 01[0m
+[0;32mI (106388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (106388) example: 01[0m
+[0;32mI (106798) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (106798) example: 01[0m
+[0;32mI (107308) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (107308) example: 01[0m
+[0;32mI (107818) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (107818) example: 01[0m
+[0;32mI (108338) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (108338) example: 01[0m
+[0;32mI (108948) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (108948) example: 01[0m
+[0;32mI (109458) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (109458) example: 01[0m
+[0;32mI (109868) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (109868) example: 01[0m
+[0;32mI (110378) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (110378) example: 01[0m
+[0;32mI (110888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (110888) example: 01[0m
+[0;32mI (111398) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (111398) example: 01[0m
+[0;32mI (111918) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (111918) example: 01[0m
+[0;32mI (112428) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (112428) example: 01[0m
+[0;32mI (112938) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (112938) example: 01[0m
+[0;32mI (113448) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (113448) example: 01[0m
+[0;32mI (113958) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (113968) example: 01[0m
+[0;32mI (114378) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (114378) example: 01[0m
+[0;32mI (114888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (114888) example: 01[0m
+[0;32mI (115398) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (115398) example: 01[0m
+[0;32mI (115908) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (115908) example: 01[0m
+[0;32mI (116428) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (116428) example: 01[0m
+[0;32mI (116928) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (116928) example: 01[0m
+[0;32mI (117348) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (117348) example: 01[0m
+[0;32mI (117958) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (117958) example: 01[0m
+[0;32mI (118368) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (118368) example: 01[0m
+[0;32mI (118878) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (118878) example: 01[0m
+[0;32mI (119388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (119388) example: 01[0m
+[0;32mI (119898) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (119898) example: 01[0m
+[0;32mI (120418) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (120418) example: 01[0m
+[0;32mI (120928) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (120928) example: 01[0m
+[0;32mI (121438) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (121438) example: 01[0m
+[0;32mI (121948) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (121948) example: 01[0m
+[0;32mI (122458) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (122458) example: 01[0m
+[0;32mI (122878) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (122878) example: 01[0m
+[0;32mI (123388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (123388) example: 01[0m
+[0;32mI (123898) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (123898) example: 01[0m
+[0;32mI (124408) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (124408) example: 01[0m
+[0;32mI (124918) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (124918) example: 01[0m
+[0;32mI (125438) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (125438) example: 01[0m
+[0;32mI (125948) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (125948) example: 01[0m
+[0;32mI (126458) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (126458) example: 01[0m
+[0;32mI (126868) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (126868) example: 01[0m
+[0;32mI (127378) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (127378) example: 01[0m
+[0;32mI (127888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (127888) example: 01[0m
+[0;32mI (128408) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (128408) example: 01[0m
+[0;32mI (128918) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (128918) example: 01[0m
+[0;32mI (129428) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (129428) example: 01[0m
+[0;32mI (129938) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (129938) example: 01[0m
+[0;32mI (130448) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (130448) example: 01[0m
+[0;32mI (130958) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (130968) example: 01[0m
+[0;32mI (131368) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (131368) example: 01[0m
+[0;32mI (131888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (131888) example: 01[0m
+[0;32mI (132398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (132398) example: 015[0m
+[0;32mI (132908) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (132908) example: 015[0m
+[0;32mI (133418) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (133418) example: 015[0m
+[0;32mI (133938) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (133938) example: 015[0m
+[0;32mI (134448) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (134448) example: 015[0m
+[0;32mI (134958) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (134958) example: 015[0m
+[0;32mI (135368) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (135368) example: 015[0m
+[0;32mI (135878) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (135878) example: 015[0m
+[0;32mI (136388) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (136388) example: 015[0m
+[0;32mI (136898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (136898) example: 015[0m
+[0;32mI (137418) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (137418) example: 01[0m
+[0;32mI (137928) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (137928) example: 01[0m
+[0;32mI (138438) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (138438) example: 013[0m
+[0;32mI (138948) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (138948) example: 013[0m
+[0;32mI (139458) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (139458) example: 013[0m
+[0;32mI (139868) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (139868) example: 013[0m
+[0;32mI (140378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (140388) example: 013[0m
+[0;32mI (140898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (140898) example: 013[0m
+[0;32mI (141408) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (141408) example: 013[0m
+[0;32mI (141918) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (141918) example: 013[0m
+[0;32mI (142428) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (142428) example: 013[0m
+[0;32mI (142948) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (142948) example: 012[0m
+[0;32mI (143458) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (143458) example: 012[0m
+[0;32mI (143868) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (143868) example: 012[0m
+[0;32mI (144378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (144378) example: 012[0m
+[0;32mI (144888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (144888) example: 012[0m
+[0;32mI (145398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (145398) example: 012[0m
+[0;32mI (145908) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (145908) example: 012[0m
+[0;32mI (146218) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (146218) example: 021[0m
+[0;32mI (146428) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (146428) example: 012[0m
+[0;32mI (146628) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (146628) example: 021[0m
+[0;32mI (146938) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (146938) example: 012[0m
+[0;32mI (147138) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (147138) example: 021[0m
+[0;32mI (147378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (147378) example: 012[0m
+[0;32mI (147388) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (147388) example: 021[0m
+[0;32mI (147958) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (147958) example: 012[0m
+[0;32mI (148168) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (148168) example: 021[0m
+[0;32mI (148368) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (148368) example: 012[0m
+[0;32mI (148378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (148378) example: 021[0m
+[0;32mI (148878) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (148878) example: 01[0m
+[0;32mI (148888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (148888) example: 021[0m
+[0;32mI (149398) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (149398) example: 01[0m
+[0;32mI (149408) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (149408) example: 021[0m
+[0;32mI (149908) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (149908) example: 01[0m
+[0;32mI (150108) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (150108) example: 021[0m
+[0;32mI (150418) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (150418) example: 01[0m
+[0;32mI (150628) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (150628) example: 021[0m
+[0;32mI (150948) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (150948) example: 01[0m
+[0;32mI (151138) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (151138) example: 021[0m
+[0;32mI (151438) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (151448) example: 01[0m
+[0;32mI (151648) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (151648) example: 021[0m
+[0;32mI (151858) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (151858) example: 01[0m
+[0;32mI (151858) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (151868) example: 021[0m
+[0;32mI (152368) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (152368) example: 01[0m
+[0;32mI (152378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (152378) example: 021[0m
+[0;32mI (152888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (152888) example: 01[0m
+[0;32mI (152898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (152898) example: 021[0m
+[0;32mI (153388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (153388) example: 01[0m
+[0;32mI (153398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (153398) example: 021[0m
+[0;32mI (153898) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (153898) example: 01[0m
+[0;32mI (154108) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (154108) example: 021[0m
+[0;32mI (154408) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (154418) example: 01[0m
+[0;32mI (154618) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (154618) example: 021[0m
+[0;32mI (154928) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (154928) example: 01[0m
+[0;32mI (155128) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (155128) example: 021[0m
+[0;32mI (155438) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (155438) example: 01[0m
+[0;32mI (155648) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (155648) example: 021[0m
+[0;32mI (155848) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (155858) example: 01[0m
+[0;32mI (155858) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (155858) example: 021[0m
+[0;32mI (156458) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (156458) example: 01[0m
+[0;32mI (156468) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (156468) example: 021[0m
+[0;32mI (156868) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (156868) example: 01[0m
+[0;32mI (156878) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (156878) example: 021[0m
+[0;32mI (157388) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (157388) example: 012[0m
+[0;32mI (157398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (157398) example: 021[0m
+[0;32mI (157898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (157898) example: 012[0m
+[0;32mI (157908) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (157908) example: 021[0m
+[0;32mI (158418) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (158418) example: 012[0m
+[0;32mI (158608) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (158608) example: 021[0m
+[0;32mI (158918) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (158918) example: 012[0m
+[0;32mI (159118) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (159128) example: 021[0m
+[0;32mI (159428) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (159428) example: 012[0m
+[0;32mI (159638) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (159638) example: 021[0m
+[0;32mI (159938) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (159938) example: 012[0m
+[0;32mI (160148) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (160148) example: 021[0m
+[0;32mI (160358) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (160358) example: 012[0m
+[0;32mI (160368) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (160368) example: 021[0m
+[0;32mI (160968) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (160968) example: 012[0m
+[0;32mI (161168) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (161168) example: 021[0m
+[0;32mI (161378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (161378) example: 012[0m
+[0;32mI (161388) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (161388) example: 021[0m
+[0;32mI (161888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (161888) example: 012[0m
+[0;32mI (161898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (161898) example: 021[0m
+[0;32mI (162398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (162408) example: 012[0m
+[0;32mI (162408) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (162408) example: 021[0m
+[0;32mI (162908) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (162908) example: 012[0m
+[0;32mI (163118) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (163118) example: 021[0m
+[0;32mI (163428) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (163428) example: 012[0m
+[0;32mI (163628) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (163628) example: 021[0m
+[0;32mI (163938) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (163938) example: 012[0m
+[0;32mI (164138) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (164138) example: 021[0m
+[0;32mI (164358) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (164358) example: 012[0m
+[0;32mI (164358) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (164368) example: 021[0m
+[0;32mI (164958) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (164958) example: 012[0m
+[0;32mI (165168) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (165168) example: 021[0m
+[0;32mI (165368) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (165368) example: 012[0m
+[0;32mI (165378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (165378) example: 021[0m
+[0;32mI (165878) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (165878) example: 012[0m
+[0;32mI (165888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (165888) example: 021[0m
+[0;32mI (166398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (166398) example: 012[0m
+[0;32mI (166398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (166398) example: 021[0m
+[0;32mI (166908) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (166908) example: 012[0m
+[0;32mI (167108) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (167108) example: 021[0m
+[0;32mI (167418) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (167418) example: 012[0m
+[0;32mI (167618) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (167618) example: 021[0m
+[0;32mI (167928) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (167928) example: 012[0m
+[0;32mI (168448) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (168448) example: 012[0m
+[0;32mI (168948) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (168958) example: 012[0m
+[0;32mI (169468) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (169468) example: 01[0m
+[0;32mI (169878) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (169878) example: 014[0m
+[0;32mI (170388) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (170388) example: 014[0m
+[0;32mI (170898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (170898) example: 014[0m
+[0;32mI (171408) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (171408) example: 014[0m
+[0;32mI (171928) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (171928) example: 014[0m
+[0;32mI (172438) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (172438) example: 014[0m
+[0;32mI (172948) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (172948) example: 014[0m
+[0;32mI (173458) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (173458) example: 014[0m
+[0;32mI (173868) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (173868) example: 014[0m
+[0;32mI (174378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (174378) example: 014[0m
+[0;32mI (174898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (174898) example: 014[0m
+[0;32mI (175408) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (175408) example: 014[0m
+[0;32mI (175918) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (175918) example: 014[0m
+[0;32mI (176428) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (176428) example: 014[0m
+[0;32mI (176938) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (176938) example: 014[0m
+[0;32mI (177458) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (177458) example: 014[0m
+[0;32mI (177968) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (177968) example: 014[0m
+[0;32mI (178378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (178378) example: 014[0m
+[0;32mI (178888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (178888) example: 014[0m
+[0;32mI (179408) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (179408) example: 014[0m
+[0;32mI (179908) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (179908) example: 014[0m
+[0;32mI (180418) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (180418) example: 014[0m
+[0;32mI (180938) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (180938) example: 014[0m
+[0;32mI (181448) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (181448) example: 014[0m
+[0;32mI (181958) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (181958) example: 014[0m
+[0;32mI (182168) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (182168) example: 021[0m
+[0;32mI (182368) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (182368) example: 014[0m
+[0;32mI (182378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (182378) example: 021[0m
+[0;32mI (182988) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (182988) example: 014[0m
+[0;32mI (183188) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (183188) example: 021[0m
+[0;32mI (183398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (183398) example: 014[0m
+[0;32mI (183408) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (183408) example: 021[0m
+[0;32mI (183908) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (183908) example: 014[0m
+[0;32mI (184108) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (184108) example: 021[0m
+[0;32mI (184418) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (184418) example: 014[0m
+[0;32mI (184618) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (184618) example: 021[0m
+[0;32mI (184928) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (184928) example: 014[0m
+[0;32mI (185128) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (185138) example: 021[0m
+[0;32mI (185448) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (185448) example: 014[0m
+[0;32mI (185648) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (185648) example: 021[0m
+[0;32mI (185848) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (185858) example: 014[0m
+[0;32mI (185858) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (185858) example: 021[0m
+[0;32mI (186468) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (186468) example: 014[0m
+[0;32mI (186668) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (186668) example: 021[0m
+[0;32mI (186878) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (186878) example: 014[0m
+[0;32mI (186878) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (186878) example: 021[0m
+[0;32mI (187388) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (187388) example: 0146[0m
+[0;32mI (187398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (187398) example: 021[0m
+[0;32mI (187898) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (187898) example: 0146[0m
+[0;32mI (187908) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (187908) example: 021[0m
+[0;32mI (188408) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (188408) example: 0146[0m
+[0;32mI (188618) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (188618) example: 021[0m
+[0;32mI (188918) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (188918) example: 0146[0m
+[0;32mI (189128) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (189128) example: 021[0m
+[0;32mI (189438) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (189438) example: 0146[0m
+[0;32mI (189638) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (189638) example: 021[0m
+[0;32mI (189848) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (189848) example: 0146[0m
+[0;32mI (189858) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (189858) example: 021[0m
+[0;32mI (190458) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (190458) example: 0146[0m
+[0;32mI (190668) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (190668) example: 021[0m
+[0;32mI (190868) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (190868) example: 0146[0m
+[0;32mI (190878) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (190878) example: 021[0m
+[0;32mI (191398) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (191398) example: 0146[0m
+[0;32mI (191588) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (191588) example: 021[0m
+[0;32mI (191888) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (191888) example: 0146[0m
+[0;32mI (191898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (191898) example: 021[0m
+[0;32mI (192408) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (192408) example: 0146[0m
+[0;32mI (192608) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (192608) example: 021[0m
+[0;32mI (192918) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (192918) example: 0146[0m
+[0;32mI (193118) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (193118) example: 021[0m
+[0;32mI (193428) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (193428) example: 0146[0m
+[0;32mI (193638) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (193638) example: 021[0m
+[0;32mI (193938) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (193938) example: 0146[0m
+[0;32mI (194148) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (194148) example: 021[0m
+[0;32mI (194448) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (194448) example: 0146[0m
+[0;32mI (194678) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (194678) example: 021[0m
+[0;32mI (194858) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (194858) example: 0146[0m
+[0;32mI (194868) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (194868) example: 021[0m
+[0;32mI (195378) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (195378) example: 0146[0m
+[0;32mI (195378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (195378) example: 021[0m
+[0;32mI (195888) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (195888) example: 0146[0m
+[0;32mI (195888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (195888) example: 021[0m
+[0;32mI (196398) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (196398) example: 0146[0m
+[0;32mI (196408) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (196408) example: 021[0m
+[0;32mI (196908) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (196908) example: 014[0m
+[0;32mI (197118) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (197118) example: 021[0m
+[0;32mI (197428) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (197428) example: 014[0m
+[0;32mI (197628) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (197628) example: 021[0m
+[0;32mI (197938) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (197938) example: 0145[0m
+[0;32mI (198138) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (198138) example: 021[0m
+[0;32mI (198448) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (198448) example: 0145[0m
+[0;32mI (198648) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (198648) example: 021[0m
+[0;32mI (198858) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (198858) example: 0145[0m
+[0;32mI (198858) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (198858) example: 021[0m
+[0;32mI (199368) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (199368) example: 0145[0m
+[0;32mI (199378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (199378) example: 021[0m
+[0;32mI (199878) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (199878) example: 0145[0m
+[0;32mI (199888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (199888) example: 021[0m
+[0;32mI (200388) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (200388) example: 0145[0m
+[0;32mI (200398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (200398) example: 021[0m
+[0;32mI (200908) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (200908) example: 0145[0m
+[0;32mI (201208) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (201208) example: 021[0m
+[0;32mI (201418) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (201418) example: 0145[0m
+[0;32mI (201618) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (201618) example: 021[0m
+[0;32mI (201928) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (201928) example: 0145[0m
+[0;32mI (202238) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (202238) example: 021[0m
+[0;32mI (202438) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (202438) example: 0145[0m
+[0;32mI (202648) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (202648) example: 021[0m
+[0;32mI (202848) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (202848) example: 0145[0m
+[0;32mI (202858) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (202858) example: 021[0m
+[0;32mI (203468) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (203468) example: 0145[0m
+[0;32mI (203668) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (203668) example: 021[0m
+[0;32mI (203978) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (203978) example: 0145021[0m
+[0;32mI (204388) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (204388) example: 0145[0m
+[0;32mI (204398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (204398) example: 021[0m
+[0;32mI (204898) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (204898) example: 0145[0m
+[0;32mI (205098) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (205098) example: 021[0m
+[0;32mI (205408) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (205408) example: 0145[0m
+[0;32mI (205618) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (205618) example: 021[0m
+[0;32mI (205918) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (205918) example: 0145[0m
+[0;32mI (206128) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (206128) example: 021[0m
+[0;32mI (206438) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (206438) example: 0145[0m
+[0;32mI (206638) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (206638) example: 021[0m
+[0;32mI (206948) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (206948) example: 0145[0m
+[0;32mI (207148) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (207148) example: 021[0m
+[0;32mI (207358) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (207358) example: 0145[0m
+[0;32mI (207358) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (207358) example: 021[0m
+[0;32mI (207878) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (207888) example: 0145[0m
+[0;32mI (207888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (207888) example: 021[0m
+[0;32mI (208378) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (208378) example: 0145[0m
+[0;32mI (208388) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (208388) example: 021[0m
+[0;32mI (208908) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (208908) example: 0145[0m
+[0;32mI (208918) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (208918) example: 021[0m
+[0;32mI (209408) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (209408) example: 0145[0m
+[0;32mI (209608) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (209608) example: 021[0m
+[0;32mI (209918) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (209918) example: 0145[0m
+[0;32mI (210118) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (210118) example: 021[0m
+[0;32mI (210428) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (210428) example: 0145[0m
+[0;32mI (210628) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (210628) example: 021[0m
+[0;32mI (210938) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (210938) example: 0145[0m
+[0;32mI (211148) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (211148) example: 021[0m
+[0;32mI (211348) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (211348) example: 0145[0m
+[0;32mI (211358) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (211358) example: 021[0m
+[0;32mI (211968) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (211968) example: 0145[0m
+[0;32mI (212168) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (212168) example: 021[0m
+[0;32mI (212378) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (212378) example: 0145[0m
+[0;32mI (212378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (212378) example: 021[0m
+[0;32mI (212888) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (212898) example: 0145[0m
+[0;32mI (212898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (212898) example: 021[0m
+[0;32mI (213408) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (213408) example: 0145[0m
+[0;32mI (213408) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (213408) example: 021[0m
+[0;32mI (213908) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (213908) example: 0145[0m
+[0;32mI (214118) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (214118) example: 021[0m
+[0;32mI (214418) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (214418) example: 0145[0m
+[0;32mI (214628) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (214628) example: 021[0m
+[0;32mI (214948) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (214948) example: 0145[0m
+[0;32mI (215138) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (215138) example: 021[0m
+[0;32mI (215448) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (215448) example: 0145[0m
+[0;32mI (215648) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (215648) example: 021[0m
+[0;32mI (215858) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (215858) example: 0145[0m
+[0;32mI (215868) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (215868) example: 021[0m
+[0;32mI (216468) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (216468) example: 0145[0m
+[0;32mI (216678) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (216678) example: 021[0m
+[0;32mI (216878) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (216878) example: 0145[0m
+[0;32mI (216888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (216888) example: 021[0m
+[0;32mI (217388) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (217388) example: 0145[0m
+[0;32mI (217398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (217398) example: 021[0m
+[0;32mI (217908) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (217908) example: 0145[0m
+[0;32mI (218108) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (218108) example: 021[0m
+[0;32mI (218418) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (218418) example: 0145[0m
+[0;32mI (218618) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (218618) example: 021[0m
+[0;32mI (218928) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (218928) example: 0145[0m
+[0;32mI (219128) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (219128) example: 021[0m
+[0;32mI (219438) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (219438) example: 0145[0m
+[0;32mI (219648) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (219648) example: 021[0m
+[0;32mI (219968) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (219968) example: 0145[0m
+[0;32mI (220158) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (220158) example: 021[0m
+[0;32mI (220358) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (220358) example: 0145[0m
+[0;32mI (220368) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (220368) example: 021[0m
+[0;32mI (220878) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (220878) example: 0145[0m
+[0;32mI (220878) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (220878) example: 021[0m
+[0;32mI (221388) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (221388) example: 0145[0m
+[0;32mI (221388) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (221388) example: 021[0m
+[0;32mI (221898) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (221898) example: 0145[0m
+[0;32mI (221908) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (221908) example: 021[0m
+[0;32mI (222408) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (222408) example: 0145[0m
+[0;32mI (222608) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (222618) example: 021[0m
+[0;32mI (222918) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (222918) example: 0145[0m
+[0;32mI (223128) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (223128) example: 021[0m
+[0;32mI (223428) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (223428) example: 0145[0m
+[0;32mI (223638) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (223638) example: 021[0m
+[0;32mI (223948) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (223948) example: 0145[0m
+[0;32mI (224148) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (224148) example: 021[0m
+[0;32mI (224358) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (224358) example: 0145[0m
+[0;32mI (224368) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (224368) example: 021[0m
+[0;32mI (224968) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (224968) example: 0145[0m
+[0;32mI (225278) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (225278) example: 021[0m
+[0;32mI (225478) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (225478) example: 0145021[0m
+[0;32mI (225898) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (225898) example: 0145[0m
+[0;32mI (225898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (225898) example: 021[0m
+[0;32mI (226398) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (226398) example: 0145[0m
+[0;32mI (226608) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (226608) example: 021[0m
+[0;32mI (226918) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (226918) example: 0145[0m
+[0;32mI (227118) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (227118) example: 021[0m
+[0;32mI (227428) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (227428) example: 0145[0m
+[0;32mI (227628) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (227628) example: 021[0m
+[0;32mI (227948) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (227948) example: 0145[0m
+[0;32mI (228138) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (228148) example: 021[0m
+[0;32mI (228448) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (228448) example: 0145[0m
+[0;32mI (228658) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (228658) example: 021[0m
+[0;32mI (228868) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (228868) example: 0145[0m
+[0;32mI (228878) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (228878) example: 021[0m
+[0;32mI (229368) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (229368) example: 0145[0m
+[0;32mI (229388) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (229388) example: 021[0m
+[0;32mI (229888) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (229888) example: 0145[0m
+[0;32mI (229898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (229898) example: 021[0m
+[0;32mI (230398) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (230398) example: 0145[0m
+[0;32mI (230398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (230398) example: 021[0m
+[0;32mI (230908) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (230908) example: 0145[0m
+[0;32mI (231108) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (231108) example: 021[0m
+[0;32mI (231418) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (231418) example: 0145[0m
+[0;32mI (231628) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (231628) example: 021[0m
+[0;32mI (231928) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (231928) example: 0145[0m
+[0;32mI (232238) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (232238) example: 021[0m
+[0;32mI (232448) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (232448) example: 0145[0m
+[0;32mI (232498) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (232498) example: 021[0m
+[0;32mI (232958) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (232958) example: 0145[0m
+[0;32mI (233158) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (233158) example: 021[0m
+[0;32mI (233368) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (233368) example: 0145[0m
+[0;32mI (233368) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (233368) example: 021[0m
+[0;32mI (233878) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (233878) example: 0145[0m
+[0;32mI (233888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (233888) example: 021[0m
+[0;32mI (234388) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (234388) example: 0145[0m
+[0;32mI (234398) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (234398) example: 021[0m
+[0;32mI (234898) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (234898) example: 0145[0m
+[0;32mI (235108) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (235108) example: 021[0m
+[0;32mI (235418) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (235418) example: 0145[0m
+[0;32mI (235618) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (235618) example: 021[0m
+[0;32mI (235928) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (235928) example: 0145[0m
+[0;32mI (236128) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (236128) example: 021[0m
+[0;32mI (236438) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (236438) example: 0145[0m
+[0;32mI (236538) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (236538) example: 021[0m
+[0;32mI (236948) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (236948) example: 0145[0m
+[0;32mI (237158) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (237158) example: 021[0m
+[0;32mI (237358) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (237358) example: 0145[0m
+[0;32mI (237368) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (237368) example: 021[0m
+[0;32mI (237868) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (237868) example: 0145[0m
+[0;32mI (237878) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (237878) example: 021[0m
+[0;32mI (238378) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (238388) example: 0145[0m
+[0;32mI (238388) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (238388) example: 021[0m
+[0;32mI (238898) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (238898) example: 0145[0m
+[0;32mI (238898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (238898) example: 021[0m
+[0;32mI (239408) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (239408) example: 0145[0m
+[0;32mI (239608) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (239608) example: 021[0m
+[0;32mI (239918) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (239918) example: 0145[0m
+[0;32mI (240128) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (240128) example: 021[0m
+[0;32mI (240428) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (240428) example: 0145[0m
+[0;32mI (240638) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (240638) example: 021[0m
+[0;32mI (240938) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (240948) example: 0145[0m
+[0;32mI (241148) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (241148) example: 021[0m
+[0;32mI (241458) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (241458) example: 0145[0m
+[0;32mI (241658) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (241658) example: 021[0m
+[0;32mI (241868) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (241868) example: 0145[0m
+[0;32mI (241868) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (241868) example: 021[0m
+[0;32mI (242378) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (242378) example: 0145[0m
+[0;32mI (242388) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (242388) example: 021[0m
+[0;32mI (242888) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (242888) example: 0145[0m
+[0;32mI (242898) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (242898) example: 021[0m
+[0;32mI (243398) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (243398) example: 0145[0m
+[0;32mI (243608) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (243608) example: 021[0m
+[0;32mI (243908) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (243918) example: 0145[0m
+[0;32mI (244118) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (244118) example: 021[0m
+[0;32mI (244428) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (244428) example: 015[0m
+[0;32mI (244618) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (244618) example: 021[0m
+[0;32mI (244938) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (244938) example: 015[0m
+[0;32mI (245138) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (245138) example: 021[0m
+[0;32mI (245448) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (245448) example: 015[0m
+[0;32mI (245658) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (245658) example: 021[0m
+[0;32mI (245858) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (245858) example: 01[0m
+[0;32mI (245868) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (245868) example: 021[0m
+[0;32mI (246368) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (246378) example: 01[0m
+[0;32mI (246378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (246378) example: 021[0m
+[0;32mI (246988) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (246988) example: 01[0m
+[0;32mI (247188) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (247188) example: 021[0m
+[0;32mI (247398) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (247398) example: 01[0m
+[0;32mI (247908) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (247908) example: 01[0m
+[0;32mI (248418) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (248418) example: 01[0m
+[0;32mI (248928) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (248928) example: 01[0m
+[0;32mI (249438) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (249438) example: 01[0m
+[0;32mI (249958) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (249958) example: 01[0m
+[0;32mI (250468) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (250468) example: 01[0m
+[0;32mI (250888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (250888) example: 01[0m
+[0;32mI (251388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (251388) example: 01[0m
+[0;32mI (251898) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (251898) example: 01[0m
+[0;32mI (252418) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (252418) example: 01[0m
+[0;32mI (252928) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (252928) example: 01[0m
+[0;32mI (253438) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (253438) example: 01[0m
+[0;32mI (253948) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (253948) example: 01[0m
+[0;32mI (254458) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (254458) example: 01[0m
+[0;32mI (254868) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (254868) example: 01[0m
+[0;32mI (255388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (255388) example: 01[0m
+[0;32mI (255898) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (255898) example: 01[0m
+[0;32mI (256408) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (256408) example: 01[0m
+[0;32mI (256918) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (256918) example: 01[0m
+[0;32mI (257428) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (257428) example: 01[0m
+[0;32mI (257938) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (257938) example: 01[0m
+[0;32mI (258468) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (258478) example: 01[0m
+[0;32mI (258968) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (258968) example: 01[0m
+[0;32mI (259378) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (259378) example: 01[0m
+[0;32mI (259888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (259888) example: 01[0m
+[0;32mI (260398) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (260398) example: 01[0m
+[0;32mI (260908) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (260908) example: 01[0m
+[0;32mI (261428) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (261428) example: 01[0m
+[0;32mI (261938) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (261938) example: 01[0m
+[0;32mI (262448) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (262448) example: 01[0m
+[0;32mI (262958) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (262958) example: 01[0m
+[0;32mI (263368) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (263368) example: 01[0m
+[0;32mI (263878) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (263878) example: 01[0m
+[0;32mI (264388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (264398) example: 01[0m
+[0;32mI (264908) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (264908) example: 01[0m
+[0;32mI (265418) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (265418) example: 01[0m
+[0;32mI (265928) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (265928) example: 01[0m
+[0;32mI (266448) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (266448) example: 01[0m
+[0;32mI (266958) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (266958) example: 01[0m
+[0;32mI (267468) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (267468) example: 01[0m
+[0;32mI (267878) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (267878) example: 01[0m
+[0;32mI (268388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (268388) example: 01[0m
+[0;32mI (268898) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (268898) example: 01[0m
+[0;32mI (269358) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (269358) example: 01[0m
+[0;32mI (269928) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (269928) example: 01[0m
+[0;32mI (270438) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (270438) example: 01[0m
+[0;32mI (270948) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (270948) example: 01[0m
+[0;32mI (271478) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (271478) example: 01[0m
+[0;32mI (271868) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (271868) example: 01[0m
+[0;32mI (272378) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (272378) example: 01[0m
+[0;32mI (272898) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (272898) example: 01[0m
+[0;32mI (273418) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (273418) example: 01[0m
+[0;32mI (273918) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (273918) example: 01[0m
+[0;32mI (274428) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (274428) example: 01[0m
+[0;32mI (274938) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (274938) example: 01[0m
+[0;32mI (275458) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (275458) example: 01[0m
+[0;32mI (275968) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (275968) example: 01[0m
+[0;32mI (276378) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (276378) example: 01[0m
+[0;32mI (276888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (276888) example: 01[0m
+[0;32mI (277398) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (277398) example: 01[0m
+[0;32mI (277918) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (277918) example: 01[0m
+[0;32mI (278428) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (278428) example: 01[0m
+[0;32mI (278938) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (278938) example: 01[0m
+[0;32mI (279448) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (279448) example: 01[0m
+[0;32mI (279958) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (279958) example: 01[0m
+[0;32mI (280368) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (280368) example: 01[0m
+[0;32mI (280878) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (280878) example: 01[0m
+[0;32mI (281388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (281388) example: 01[0m
+[0;32mI (281908) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (281908) example: 01[0m
+[0;32mI (282418) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (282418) example: 01[0m
+[0;32mI (282928) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (282928) example: 01[0m
+[0;32mI (283438) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (283438) example: 01[0m
+[0;32mI (283958) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (283958) example: 01[0m
+[0;32mI (284468) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (284468) example: 01[0m
+[0;32mI (284878) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (284878) example: 01[0m
+[0;32mI (285388) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (285388) example: 01[0m
+[0;32mI (285898) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (285898) example: 01[0m
+[0;32mI (286408) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (286418) example: 01[0m
+[0;32mI (286918) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (286918) example: 01[0m
+[0;32mI (287438) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (287438) example: 01[0m
+[0;32mI (287948) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (287948) example: 01[0m
+[0;32mI (288458) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (288458) example: 01[0m
+[0;32mI (288868) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (288868) example: 01[0m
+[0;32mI (289378) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (289378) example: 01[0m
+[0;32mI (289888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (289888) example: 01[0m
+[0;32mI (290408) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (290408) example: 01[0m
+[0;32mI (290918) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (290918) example: 01[0m
+[0;32mI (291428) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (291428) example: 01[0m
+[0;32mI (291938) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (291938) example: 01[0m
+[0;32mI (292458) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (292458) example: 01[0m
+[0;32mI (292968) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (292968) example: 01[0m
+[0;32mI (293378) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (293378) example: 01[0m
+[0;32mI (293888) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (293898) example: 01[0m
+[0;32mI (294398) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (294398) example: 01[0m
+[0;32mI (294918) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (294918) example: 01[0m
+[0;32mI (295418) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (295418) example: 01[0m
+[0;32mI (295938) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (295938) example: 01[0m
+[0;32mI (296448) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (296448) example: 01[0m
+[0;32mI (296658) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (296658) example: 021[0m
+[0;32mI (296958) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (296958) example: 01[0m
+[0;32mI (297158) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (297158) example: 021[0m
+[0;32mI (297368) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (297368) example: 01[0m
+[0;32mI (297378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (297378) example: 021[0m
+[0;32mI (297878) example: Received 2 bytes from 192.168.2.124:[0m
+[0;32mI (297878) example: 01[0m
+[0;32mI (297888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (297888) example: 021[0m

@@ -1,0 +1,2884 @@
+ets Jul�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 24 2025 17:34:53[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=194f8h (103672) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=00029520 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=00029544 vaddr=3ffb0000 size=03eb4h ( 16052) load[0m
+[0;32mI (135) esp_image: segment 3: paddr=0002d400 vaddr=40080000 size=02c18h ( 11288) load[0m
+[0;32mI (141) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=848d0h (542928) map[0m
+[0;32mI (330) esp_image: segment 5: paddr=000b48f8 vaddr=40082c18 size=14b80h ( 84864) load[0m
+[0;32mI (374) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (374) boot: Disabling RNG early entropy source...[0m
+[0;32mI (385) cpu_start: Multicore app[0m
+[0;32mI (393) cpu_start: Pro cpu start user code[0m
+[0;32mI (393) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (393) app_init: Application information:[0m
+[0;32mI (393) app_init: Project name:     client[0m
+[0;32mI (397) app_init: App version:      1[0m
+[0;32mI (400) app_init: Compile time:     Jun 25 2025 11:44:25[0m
+[0;32mI (405) app_init: ELF file SHA256:  51e37f9ef...[0m
+[0;32mI (410) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (414) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (417) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (421) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (425) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (432) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (437) heap_init: At 3FFB8170 len 00027E90 (159 KiB): DRAM[0m
+[0;32mI (442) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (447) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (453) heap_init: At 40097798 len 00008868 (34 KiB): IRAM[0m
+[0;32mI (460) spi_flash: detected chip: generic[0m
+[0;32mI (462) spi_flash: flash io: dio[0m
+[0;33mW (465) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (478) main_task: Started on CPU0[0m
+[0;32mI (488) main_task: Calling app_main()[0m
+[0;32mI (518) example_connect: Start example_connect.[0m
+[0;32mI (528) wifi:wifi driver task: 3ffbfd58, prio:23, stack:6656, core=0[0m
+[0;32mI (538) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (538) wifi:wifi certification version: v7.0[0m
+[0;32mI (538) wifi:config NVS flash: enabled[0m
+[0;32mI (538) wifi:config nano formatting: disabled[0m
+[0;32mI (548) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (548) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (558) wifi:Init management short buffer num: 32[0m
+[0;32mI (558) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (568) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (568) wifi:Init static rx buffer num: 10[0m
+[0;32mI (568) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (578) wifi_init: rx ba win: 6[0m
+[0;32mI (578) wifi_init: accept mbox: 6[0m
+[0;32mI (578) wifi_init: tcpip mbox: 32[0m
+[0;32mI (588) wifi_init: udp mbox: 6[0m
+[0;32mI (588) wifi_init: tcp mbox: 6[0m
+[0;32mI (588) wifi_init: tcp tx win: 5760[0m
+[0;32mI (598) wifi_init: tcp rx win: 5760[0m
+[0;32mI (598) wifi_init: tcp mss: 1440[0m
+[0;32mI (598) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (598) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (608) phy_init: phy_version 4860,6b7a6e5,Feb  6 2025,14:47:07[0m
+[0;32mI (688) wifi:mode : sta (38:18:2b:80:11:38)[0m
+[0;32mI (688) wifi:enable tsf[0m
+[0;32mI (688) example_connect: Connecting to The Watling Boys...[0m
+[0;33mW (688) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (698) example_connect: Waiting for IP(s)[0m
+[0;32mI (3358) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3358) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3378) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (3388) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (3398) wifi:connected with The Watling Boys, aid = 28, channel 1, BW20, bssid = 78:8d:af:2d:e5:84[0m
+[0;32mI (3398) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (3408) wifi:pm start, type: 1[0m
+
+[0;32mI (3408) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (3428) wifi:<ba-add>idx:0 (ifx:0, 78:8d:af:2d:e5:84), tid:7, ssn:1, winSize:64[0m
+[0;32mI (3478) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (4438) esp_netif_handlers: example_netif_sta ip: 192.168.2.214, mask: 255.255.255.0, gw: 192.168.2.1[0m
+[0;32mI (4438) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.2.214[0m
+[0;32mI (4518) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:3a18:2bff:fe80:1138, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4518) example_common: Connected to example_netif_sta[0m
+[0;32mI (4528) example_common: - IPv4 address: 192.168.2.214,[0m
+[0;32mI (4528) example_common: - IPv6 address: fe80:0000:0000:0000:3a18:2bff:fe80:1138, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (4538) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (4618) wifi:<ba-add>idx:1 (ifx:0, 78:8d:af:2d:e5:84), tid:0, ssn:1, winSize:64[0m
+[0;32mI (4628) example: Successfully connected[0m
+[0;32mI (4648) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (4648) example: tes[0m
+[0;32mI (4658) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (4658) example: test[0m
+[0;32mI (4668) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (4668) example: test [0m
+[0;32mI (4678) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (4678) example: test m[0m
+[0;32mI (4688) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (4688) example: test me[0m
+[0;32mI (4708) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (4708) example: test mes[0m
+[0;32mI (4718) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (4718) example: test mess[0m
+[0;32mI (4728) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (4728) example: test messa[0m
+[0;32mI (4748) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (4748) example: test messag[0m
+[0;32mI (4758) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (4758) example: test message[0m
+[0;32mI (4768) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (4768) example: test message [0m
+[0;32mI (4768) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (4768) example: test message f[0m
+[0;32mI (4788) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (4788) example: test message fr[0m
+[0;32mI (4798) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (4798) example: test message fro[0m
+[0;32mI (4818) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (4818) example: test message from[0m
+[0;32mI (4828) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (4828) example: test message from [0m
+[0;32mI (4838) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (4838) example: test message from s[0m
+[0;32mI (4848) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (4848) example: test message from se[0m
+[0;32mI (4868) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (4868) example: test message from ser[0m
+[0;32mI (4878) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (4888) example: test message from serv[0m
+[0;32mI (4888) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (4888) example: test message from serve[0m
+[0;32mI (4898) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (4898) example: test message from server[0m
+[0;32mI (4918) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (4918) example: test message from server[0m
+[0;32mI (4938) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (4938) example: test message from server[0m
+[0;32mI (4958) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (4958) example: test message from server[0m
+[0;32mI (4968) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (4968) example: test message from server[0m
+[0;32mI (4978) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (4978) example: test message from server[0m
+[0;32mI (4988) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (4988) example: test message from server[0m
+[0;32mI (4998) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (4998) example: test message from server[0m
+[0;32mI (4998) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (5008) example: test message from server[0m
+[0;32mI (5018) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (5018) example: test message from server[0m
+[0;32mI (5028) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (5038) example: test message from server[0m
+[0;32mI (5038) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (5038) example: test message from server[0m
+[0;32mI (5048) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (5048) example: test message from server[0m
+[0;32mI (5068) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (5068) example: test message from server[0m
+[0;32mI (5068) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (5078) example: test message from server[0m
+[0;32mI (5088) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (5088) example: test message from server[0m
+[0;32mI (5098) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (5098) example: test message from server[0m
+[0;32mI (5118) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (5118) example: test message from server[0m
+[0;32mI (5128) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (5128) example: test message from server[0m
+[0;32mI (5138) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (5138) example: test message from server[0m
+[0;32mI (5148) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (5148) example: test message from server[0m
+[0;32mI (5158) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (5158) example: test message from server[0m
+[0;32mI (5168) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (5168) example: test message from server[0m
+[0;32mI (5178) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (5178) example: test message from server[0m
+[0;32mI (5188) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (5188) example: test message from server[0m
+[1;31mE (27348) example: recv failed: errno 104[0m
+[1;31mE (27358) example: Shutting down socket and restarting...[0m
+[0;32mI (27358) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (27368) example: Successfully connected[0m
+[0;32mI (27378) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (27378) example: tes[0m
+[0;32mI (27388) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (27388) example: test[0m
+[0;32mI (27398) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (27398) example: test [0m
+[0;32mI (27408) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (27408) example: test m[0m
+[0;32mI (27418) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (27418) example: test me[0m
+[0;32mI (27428) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (27428) example: test mes[0m
+[0;32mI (27448) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (27448) example: test mess[0m
+[0;32mI (27458) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (27458) example: test messa[0m
+[0;32mI (27478) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (27478) example: test messag[0m
+[0;32mI (27488) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (27488) example: test message[0m
+[0;32mI (27498) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (27498) example: test message [0m
+[0;32mI (27508) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (27508) example: test message f[0m
+[0;32mI (27518) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (27518) example: test message fr[0m
+[0;32mI (27528) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (27528) example: test message fro[0m
+[0;32mI (27548) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (27548) example: test message from[0m
+[0;32mI (27558) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (27558) example: test message from [0m
+[0;32mI (27568) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (27568) example: test message from s[0m
+[0;32mI (27568) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (27568) example: test message from se[0m
+[0;32mI (27588) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (27588) example: test message from ser[0m
+[0;32mI (27598) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (27598) example: test message from serv[0m
+[0;32mI (27608) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (27608) example: test message from serve[0m
+[0;32mI (27618) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (27618) example: test message from server[0m
+[0;32mI (27618) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (27618) example: test message from server[0m
+[0;32mI (27628) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (27628) example: test message from server[0m
+[0;32mI (27658) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (27658) example: test message from server[0m
+[0;32mI (27658) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (27658) example: test message from server[0m
+[0;32mI (27668) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (27668) example: test message from server[0m
+[0;32mI (27678) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (27678) example: test message from server[0m
+[0;32mI (27688) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (27688) example: test message from server[0m
+[0;32mI (27698) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (27698) example: test message from server[0m
+[0;32mI (27708) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (27708) example: test message from server[0m
+[0;32mI (27718) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (27718) example: test message from server[0m
+[0;32mI (27728) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (27728) example: test message from server[0m
+[0;32mI (27738) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (27738) example: test message from server[0m
+[0;32mI (27758) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (27758) example: test message from server[0m
+[0;32mI (27768) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (27768) example: test message from server[0m
+[0;32mI (27768) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (27768) example: test message from server[0m
+[0;32mI (27778) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (27778) example: test message from server[0m
+[0;32mI (27788) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (27788) example: test message from server[0m
+[0;32mI (27808) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (27808) example: test message from server[0m
+[0;32mI (27818) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (27818) example: test message from server[0m
+[0;32mI (27828) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (27828) example: test message from server[0m
+[0;32mI (27828) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (27828) example: test message from server[0m
+[0;32mI (27848) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (27848) example: test message from server[0m
+[0;32mI (27858) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (27858) example: test message from server[0m
+[0;32mI (27868) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (27868) example: test message from server[0m
+[1;31mE (38508) example: recv failed: errno 104[0m
+[1;31mE (38508) example: Shutting down socket and restarting...[0m
+[0;32mI (38508) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (38518) example: Successfully connected[0m
+[0;32mI (38528) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (38528) example: tes[0m
+[0;32mI (38538) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (38538) example: test[0m
+[0;32mI (38558) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (38558) example: test [0m
+[0;32mI (38558) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (38558) example: test m[0m
+[0;32mI (38568) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (38568) example: test me[0m
+[0;32mI (38578) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (38578) example: test mes[0m
+[0;32mI (38588) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (38588) example: test mess[0m
+[0;32mI (38608) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (38608) example: test messa[0m
+[0;32mI (38618) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (38628) example: test messag[0m
+[0;32mI (38658) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (38658) example: test message[0m
+[0;32mI (38668) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (38668) example: test message [0m
+[0;32mI (38678) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (38678) example: test message f[0m
+[0;32mI (38678) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (38688) example: test message fr[0m
+[0;32mI (38688) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (38688) example: test message fro[0m
+[0;32mI (38718) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (38718) example: test message from[0m
+[0;32mI (38728) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (38728) example: test message from [0m
+[0;32mI (38738) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (38738) example: test message from s[0m
+[0;32mI (38748) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (38748) example: test message from se[0m
+[0;32mI (38758) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (38758) example: test message from ser[0m
+[0;32mI (38768) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (38768) example: test message from serv[0m
+[0;32mI (38778) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (38778) example: test message from serve[0m
+[0;32mI (38788) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (38788) example: test message from server[0m
+[0;32mI (38798) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (38798) example: test message from server[0m
+[0;32mI (38818) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (38818) example: test message from server[0m
+[0;32mI (38828) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (38828) example: test message from server[0m
+[0;32mI (38848) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (38848) example: test message from server[0m
+[0;32mI (38858) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (38858) example: test message from server[0m
+[0;32mI (38868) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (38868) example: test message from server[0m
+[0;32mI (38878) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (38878) example: test message from server[0m
+[0;32mI (38878) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (38888) example: test message from server[0m
+[0;32mI (38898) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (38898) example: test message from server[0m
+[0;32mI (38918) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (38918) example: test message from server[0m
+[0;32mI (38928) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (38928) example: test message from server[0m
+[0;32mI (38938) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (38938) example: test message from server[0m
+[0;32mI (38948) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (38948) example: test message from server[0m
+[0;32mI (38988) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (38988) example: test message from server[0m
+[0;32mI (38988) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (38998) example: test message from server[0m
+[0;32mI (38998) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (38998) example: test message from server[0m
+[0;32mI (39028) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (39028) example: test message from server[0m
+[0;32mI (39028) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (39038) example: test message from server[0m
+[0;32mI (39038) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (39038) example: test message from server[0m
+[0;32mI (39048) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (39048) example: test message from server[0m
+[0;32mI (39058) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (39058) example: test message from server[0m
+[0;32mI (39068) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (39068) example: test message from server[0m
+[0;32mI (39078) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (39078) example: test message from server[0m
+[0;32mI (39088) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (39088) example: test message from server[0m
+[1;31mE (49658) example: recv failed: errno 104[0m
+[1;31mE (49658) example: Shutting down socket and restarting...[0m
+[0;32mI (49668) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (49868) example: Successfully connected[0m
+[0;32mI (50078) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (50078) example: test me[0m
+[0;32mI (50278) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (50278) example: test message[0m
+[0;32mI (50478) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (50478) example: test message from[0m
+[0;32mI (50798) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (50798) example: test message from serv[0m
+[0;32mI (50998) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (50998) example: test message from server[0m
+[0;32mI (51198) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (51198) example: test message from server[0m
+[0;32mI (51408) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (51408) example: test message from server[0m
+[0;32mI (51618) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (51618) example: test message from server[0m
+[0;32mI (51818) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (51818) example: test message from server[0m
+[0;32mI (52028) example: Received 52 bytes from 192.168.2.124:[0m
+[0;32mI (52028) example: test message from server[0m
+[1;31mE (62668) example: recv failed: errno 104[0m
+[1;31mE (62668) example: Shutting down socket and restarting...[0m
+[0;32mI (62668) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (62878) example: Successfully connected[0m
+[0;32mI (63078) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (63078) example: test me[0m
+[0;32mI (63288) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (63288) example: test message[0m
+[0;32mI (63488) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (63488) example: test message from[0m
+[0;32mI (63688) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (63688) example: test message from serv[0m
+[0;32mI (63898) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (63898) example: test message from server[0m
+[0;32mI (64108) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (64108) example: test message from server[0m
+[0;32mI (64628) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (64628) example: test message from server[0m
+[0;32mI (64838) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (64838) example: test message from server[0m
+[0;32mI (64928) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (64928) example: test message from server[0m
+[0;32mI (64938) example: Received 52 bytes from 192.168.2.124:[0m
+[0;32mI (64938) example: test message from server[0m
+[1;31mE (75578) example: recv failed: errno 104[0m
+[1;31mE (75578) example: Shutting down socket and restarting...[0m
+[0;32mI (75578) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (75588) example: Successfully connected[0m
+[0;32mI (75598) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (75598) example: test me[0m
+[0;32mI (75608) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (75608) example: test message[0m
+[0;32mI (75628) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (75628) example: test message from[0m
+[0;32mI (75648) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (75648) example: test message from serv[0m
+[0;32mI (75658) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (75658) example: test message from server[0m
+[0;32mI (75678) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (75678) example: test message from server[0m
+[0;32mI (75688) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (75688) example: test message from server[0m
+[0;32mI (75698) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (75698) example: test message from server[0m
+[0;32mI (75708) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (75708) example: test message from server[0m
+[0;32mI (75718) example: Received 52 bytes from 192.168.2.124:[0m
+[0;32mI (75718) example: test message from server[0m
+[1;31mE (86118) example: recv failed: errno 104[0m
+[1;31mE (86118) example: Shutting down socket and restarting...[0m
+[0;32mI (86128) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (86138) example: Successfully connected[0m
+[0;32mI (86148) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (86148) example: tes[0m
+[0;32mI (86158) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (86158) example: test[0m
+[0;32mI (86168) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (86168) example: test [0m
+[0;32mI (86178) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (86178) example: test m[0m
+[0;32mI (86188) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (86188) example: test me[0m
+[0;32mI (86198) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (86198) example: test mes[0m
+[0;32mI (86208) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (86208) example: test mess[0m
+[0;32mI (86228) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (86228) example: test messa[0m
+[0;32mI (86238) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (86238) example: test messag[0m
+[0;32mI (86248) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (86248) example: test message[0m
+[0;32mI (86258) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (86258) example: test message [0m
+[0;32mI (86268) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (86268) example: test message f[0m
+[0;32mI (86278) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (86278) example: test message fr[0m
+[0;32mI (86288) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (86288) example: test message fro[0m
+[0;32mI (86298) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (86298) example: test message from[0m
+[0;32mI (86308) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (86308) example: test message from [0m
+[0;32mI (86328) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (86328) example: test message from s[0m
+[0;32mI (86338) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (86338) example: test message from se[0m
+[0;32mI (86348) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (86348) example: test message from ser[0m
+[0;32mI (86358) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (86358) example: test message from serv[0m
+[0;32mI (86368) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (86368) example: test message from serve[0m
+[0;32mI (86378) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (86378) example: test message from server[0m
+[0;32mI (86388) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (86388) example: test message from server[0m
+[0;32mI (86398) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (86398) example: test message from server[0m
+[0;32mI (86408) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (86408) example: test message from server[0m
+[0;32mI (86428) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (86428) example: test message from server[0m
+[0;32mI (86438) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (86438) example: test message from server[0m
+[0;32mI (86448) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (86448) example: test message from server[0m
+[0;32mI (86458) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (86458) example: test message from server[0m
+[0;32mI (86468) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (86468) example: test message from server[0m
+[0;32mI (86478) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (86478) example: test message from server[0m
+[0;32mI (86488) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (86488) example: test message from server[0m
+[0;32mI (86498) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (86498) example: test message from server[0m
+[0;32mI (86508) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (86508) example: test message from server[0m
+[0;32mI (86518) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (86518) example: test message from server[0m
+[0;32mI (86538) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (86538) example: test message from server[0m
+[0;32mI (86548) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (86548) example: test message from server[0m
+[0;32mI (86548) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (86548) example: test message from server[0m
+[0;32mI (86568) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (86568) example: test message from server[0m
+[0;32mI (86578) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (86578) example: test message from server[0m
+[0;32mI (86588) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (86588) example: test message from server[0m
+[0;32mI (86598) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (86598) example: test message from server[0m
+[0;32mI (86608) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (86608) example: test message from server[0m
+[0;32mI (86618) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (86618) example: test message from server[0m
+[0;32mI (86638) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (86638) example: test message from server[0m
+[0;32mI (86648) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (86648) example: test message from server[0m
+[1;31mE (97178) example: recv failed: errno 104[0m
+[1;31mE (97188) example: Shutting down socket and restarting...[0m
+[0;32mI (97188) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (97388) example: Successfully connected[0m
+[0;32mI (97588) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (97588) example: tes[0m
+[0;32mI (97798) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (97798) example: test[0m
+[0;32mI (97998) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (97998) example: test [0m
+[0;32mI (98208) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (98208) example: test m[0m
+[0;32mI (98408) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (98408) example: test me[0m
+[0;32mI (98618) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (98618) example: test mes[0m
+[0;32mI (98818) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (98818) example: test mess[0m
+[0;32mI (99028) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (99028) example: test messa[0m
+[0;32mI (99228) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (99228) example: test messag[0m
+[0;32mI (99438) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (99438) example: test message[0m
+[0;32mI (99638) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (99638) example: test message [0m
+[0;32mI (99848) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (99848) example: test message f[0m
+[0;32mI (100048) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (100048) example: test message fr[0m
+[0;32mI (100248) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (100248) example: test message fro[0m
+[0;32mI (100258) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (100258) example: test message from[0m
+[0;32mI (100268) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (100268) example: test message from [0m
+[0;32mI (100278) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (100278) example: test message from s[0m
+[0;32mI (100288) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (100288) example: test message from se[0m
+[0;32mI (100298) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (100308) example: test message from ser[0m
+[0;32mI (100308) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (100308) example: test message from serv[0m
+[0;32mI (100318) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (100318) example: test message from serve[0m
+[0;32mI (100328) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (100328) example: test message from server[0m
+[0;32mI (100338) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (100338) example: test message from server[0m
+[0;32mI (100358) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (100358) example: test message from server[0m
+[0;32mI (100368) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (100368) example: test message from server[0m
+[0;32mI (100378) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (100378) example: test message from server[0m
+[0;32mI (100388) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (100388) example: test message from server[0m
+[0;32mI (100408) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (100408) example: test message from server[0m
+[0;32mI (100418) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (100418) example: test message from server[0m
+[0;32mI (100428) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (100428) example: test message from server[0m
+[0;32mI (100438) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (100438) example: test message from server[0m
+[0;32mI (100448) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (100448) example: test message from server[0m
+[0;32mI (100468) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (100468) example: test message from server[0m
+[0;32mI (100478) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (100478) example: test message from server[0m
+[0;32mI (100488) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (100488) example: test message from server[0m
+[0;32mI (100488) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (100488) example: test message from server[0m
+[0;32mI (100498) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (100508) example: test message from server[0m
+[0;32mI (100508) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (100508) example: test message from server[0m
+[0;32mI (100518) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (100518) example: test message from server[0m
+[0;32mI (100528) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (100528) example: test message from server[0m
+[0;32mI (100538) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (100538) example: test message from server[0m
+[0;32mI (100548) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (100548) example: test message from server[0m
+[0;32mI (100568) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (100568) example: test message from server[0m
+[0;32mI (100578) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (100578) example: test message from server[0m
+[0;32mI (100578) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (100578) example: test message from server[0m
+[0;32mI (100588) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (100588) example: test message from server[0m
+[1;31mE (111208) example: recv failed: errno 104[0m
+[1;31mE (111208) example: Shutting down socket and restarting...[0m
+[0;32mI (111208) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (111418) example: Successfully connected[0m
+[0;32mI (111628) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (111628) example: tes[0m
+[0;32mI (111828) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (111828) example: test[0m
+[0;32mI (112028) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (112028) example: test [0m
+[0;32mI (112248) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (112248) example: test m[0m
+[0;32mI (112438) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (112438) example: test me[0m
+[0;32mI (112638) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (112638) example: test mes[0m
+[0;32mI (112848) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (112848) example: test mess[0m
+[0;32mI (113048) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (113048) example: test messa[0m
+[0;32mI (113258) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (113258) example: test messag[0m
+[0;32mI (113468) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (113468) example: test message[0m
+[0;32mI (113668) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (113668) example: test message [0m
+[0;32mI (113868) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (113868) example: test message f[0m
+[0;32mI (114078) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (114078) example: test message fr[0m
+[0;32mI (114288) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (114288) example: test message fro[0m
+[0;32mI (114488) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (114488) example: test message from[0m
+[0;32mI (114688) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (114688) example: test message from [0m
+[0;32mI (114898) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (114898) example: test message from s[0m
+[0;32mI (115098) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (115098) example: test message from se[0m
+[0;32mI (115308) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (115308) example: test message from ser[0m
+[0;32mI (115508) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (115508) example: test message from serv[0m
+[0;32mI (115718) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (115718) example: test message from serve[0m
+[0;32mI (115928) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (115928) example: test message from server[0m
+[0;32mI (116128) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (116128) example: test message from server[0m
+[0;32mI (116328) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (116328) example: test message from server[0m
+[0;32mI (116528) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (116538) example: test message from server[0m
+[0;32mI (116738) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (116738) example: test message from server[0m
+[0;32mI (116948) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (116948) example: test message from server[0m
+[0;32mI (117288) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (117288) example: test message from server[0m
+[0;32mI (117558) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (117558) example: test message from server[0m
+[0;32mI (117768) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (117768) example: test message from server[0m
+[0;32mI (117968) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (117968) example: test message from server[0m
+[0;32mI (118168) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (118168) example: test message from server[0m
+[0;32mI (118378) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (118378) example: test message from server[0m
+[0;32mI (118588) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (118588) example: test message from server[0m
+[0;32mI (118788) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (118788) example: test message from server[0m
+[0;32mI (118998) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (118998) example: test message from server[0m
+[0;32mI (119198) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (119198) example: test message from server[0m
+[0;32mI (119398) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (119398) example: test message from server[0m
+[0;32mI (119608) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (119608) example: test message from server[0m
+[0;32mI (119808) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (119808) example: test message from server[0m
+[0;32mI (120018) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (120018) example: test message from server[0m
+[0;32mI (120218) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (120218) example: test message from server[0m
+[0;32mI (120428) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (120428) example: test message from server[0m
+[0;32mI (120628) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (120628) example: test message from server[0m
+[0;32mI (120738) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (120738) example: test message from server[0m
+[0;32mI (120748) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (120748) example: test message from server[0m
+[1;31mE (131178) example: recv failed: errno 104[0m
+[1;31mE (131178) example: Shutting down socket and restarting...[0m
+[0;32mI (131178) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (131378) example: Successfully connected[0m
+[0;32mI (131588) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (131588) example: test m[0m
+[0;32mI (131798) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (131798) example: test messa[0m
+[0;32mI (131998) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (131998) example: test message f[0m
+[0;32mI (132208) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (132208) example: test message from [0m
+[0;32mI (132408) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (132408) example: test message from serv[0m
+[0;32mI (132618) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (132618) example: test message from server[0m
+[0;32mI (132818) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (132818) example: test message from server[0m
+[0;32mI (133018) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (133018) example: test message from server[0m
+[0;32mI (133228) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (133228) example: test message from server[0m
+[0;32mI (133438) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (133438) example: test message from server[0m
+[0;32mI (133658) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (133658) example: test message from server[0m
+[0;32mI (133838) example: Received 50 bytes from 192.168.2.124:[0m
+[0;32mI (133848) example: test message from server[0m
+[1;31mE (140188) example: recv failed: errno 104[0m
+[1;31mE (140188) example: Shutting down socket and restarting...[0m
+[0;32mI (140188) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (140398) example: Successfully connected[0m
+[0;32mI (140408) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (140408) example: tes[0m
+[0;32mI (140418) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (140418) example: test[0m
+[0;32mI (140428) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (140428) example: test [0m
+[0;32mI (140448) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (140448) example: test m[0m
+[0;32mI (140458) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (140458) example: test me[0m
+[0;32mI (140468) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (140468) example: test mes[0m
+[0;32mI (140478) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (140478) example: test mess[0m
+[0;32mI (140478) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (140478) example: test messa[0m
+[0;32mI (140508) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (140508) example: test messag[0m
+[0;32mI (140518) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (140518) example: test message[0m
+[0;32mI (140528) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (140528) example: test message [0m
+[0;32mI (140538) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (140538) example: test message f[0m
+[0;32mI (140548) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (140548) example: test message fr[0m
+[0;32mI (140578) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (140578) example: test message fro[0m
+[0;32mI (140588) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (140588) example: test message from[0m
+[0;32mI (140598) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (140608) example: test message from [0m
+[0;32mI (140608) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (140608) example: test message from s[0m
+[0;32mI (140618) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (140618) example: test message from se[0m
+[0;32mI (140628) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (140628) example: test message from ser[0m
+[0;32mI (140638) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (140638) example: test message from serv[0m
+[0;32mI (140658) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (140658) example: test message from serve[0m
+[0;32mI (140668) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (140668) example: test message from server[0m
+[0;32mI (140678) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (140678) example: test message from server[0m
+[0;32mI (140688) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (140688) example: test message from server[0m
+[0;32mI (140708) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (140708) example: test message from server[0m
+[0;32mI (140728) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (140728) example: test message from server[0m
+[0;32mI (140738) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (140738) example: test message from server[0m
+[0;32mI (140748) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (140758) example: test message from server[0m
+[0;32mI (140758) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (140758) example: test message from server[0m
+[0;32mI (140768) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (140778) example: test message from server[0m
+[0;32mI (140778) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (140778) example: test message from server[0m
+[0;32mI (140788) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (140788) example: test message from server[0m
+[0;32mI (140808) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (140808) example: test message from server[0m
+[0;32mI (140818) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (140818) example: test message from server[0m
+[0;32mI (140828) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (140828) example: test message from server[0m
+[0;32mI (140838) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (140848) example: test message from server[0m
+[0;32mI (140858) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (140858) example: test message from server[0m
+[0;32mI (140868) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (140868) example: test message from server[0m
+[0;32mI (140878) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (140878) example: test message from server[0m
+[0;32mI (140878) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (140878) example: test message from server[0m
+[0;32mI (140888) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (140888) example: test message from server[0m
+[0;32mI (140908) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (140908) example: test message from server[0m
+[0;32mI (140918) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (140918) example: test message from server[0m
+[0;32mI (140928) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (140928) example: test message from server[0m
+[0;32mI (140938) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (140938) example: test message from server[0m
+[0;32mI (140948) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (140948) example: test message from server[0m
+[1;31mE (151658) example: recv failed: errno 104[0m
+[1;31mE (151658) example: Shutting down socket and restarting...[0m
+[0;32mI (151658) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (151868) example: Successfully connected[0m
+[0;32mI (152078) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (152078) example: test [0m
+[0;32mI (152278) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (152278) example: test mes[0m
+[0;32mI (152478) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (152478) example: test messag[0m
+[0;32mI (152688) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (152688) example: test message f[0m
+[0;32mI (152888) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (152888) example: test message from[0m
+[0;32mI (153098) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (153098) example: test message from se[0m
+[0;32mI (153298) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (153298) example: test message from server[0m
+[0;32mI (153508) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (153508) example: test message from server[0m
+[0;32mI (153708) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (153708) example: test message from server[0m
+[0;32mI (153908) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (153908) example: test message from server[0m
+[0;32mI (154118) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (154118) example: test message from server[0m
+[0;32mI (154318) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (154318) example: test message from server[0m
+[0;32mI (154528) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (154528) example: test message from server[0m
+[0;32mI (154588) example: Received 49 bytes from 192.168.2.124:[0m
+[0;32mI (154588) example: test message from server[0m
+[1;31mE (165278) example: recv failed: errno 104[0m
+[1;31mE (165278) example: Shutting down socket and restarting...[0m
+[0;32mI (165278) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (165638) example: Successfully connected[0m
+[0;32mI (165888) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (165888) example: tes[0m
+[0;32mI (166098) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (166098) example: test[0m
+[0;32mI (166308) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (166308) example: test [0m
+[0;32mI (166348) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (166348) example: test m[0m
+[0;32mI (166358) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (166358) example: test me[0m
+[0;32mI (166378) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (166378) example: test mes[0m
+[0;32mI (166408) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (166408) example: test mess[0m
+[0;32mI (166428) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (166428) example: test messa[0m
+[0;32mI (166448) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (166448) example: test messag[0m
+[0;32mI (166468) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (166468) example: test message[0m
+[0;32mI (166478) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (166478) example: test message [0m
+[0;32mI (166508) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (166508) example: test message f[0m
+[0;32mI (166528) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (166528) example: test message fr[0m
+[0;32mI (166558) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (166558) example: test message fro[0m
+[0;32mI (166568) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (166568) example: test message from[0m
+[0;32mI (166588) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (166588) example: test message from [0m
+[0;32mI (166608) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (166608) example: test message from s[0m
+[0;32mI (166638) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (166638) example: test message from se[0m
+[0;32mI (166668) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (166668) example: test message from ser[0m
+[0;32mI (166818) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (166818) example: test message from serv[0m
+[0;32mI (167018) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (167018) example: test message from serve[0m
+[0;32mI (167228) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (167228) example: test message from server[0m
+[0;32mI (167428) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (167428) example: test message from server[0m
+[0;32mI (167638) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (167638) example: test message from server[0m
+[0;32mI (167838) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (167848) example: test message from server[0m
+[0;32mI (167858) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (167858) example: test message from server[0m
+[0;32mI (167878) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (167878) example: test message from server[0m
+[0;32mI (167898) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (167898) example: test message from server[0m
+[0;32mI (167908) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (167908) example: test message from server[0m
+[0;32mI (167928) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (167928) example: test message from server[0m
+[0;32mI (167948) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (167948) example: test message from server[0m
+[0;32mI (167958) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (167958) example: test message from server[0m
+[0;32mI (167968) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (167978) example: test message from server[0m
+[0;32mI (167988) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (167988) example: test message from server[0m
+[0;32mI (167998) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (167998) example: test message from server[0m
+[0;32mI (168008) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (168008) example: test message from server[0m
+[0;32mI (168028) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (168028) example: test message from server[0m
+[0;32mI (168048) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (168048) example: test message from server[0m
+[0;32mI (168068) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (168068) example: test message from server[0m
+[0;32mI (168088) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (168088) example: test message from server[0m
+[0;32mI (168098) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (168098) example: test message from server[0m
+[0;32mI (168118) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (168118) example: test message from server[0m
+[0;32mI (168148) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (168148) example: test message from server[0m
+[0;32mI (168178) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (168178) example: test message from server[0m
+[0;32mI (168198) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (168198) example: test message from server[0m
+[0;32mI (168208) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (168208) example: test message from server[0m
+[1;31mE (214348) example: recv failed: errno 104[0m
+[1;31mE (214348) example: Shutting down socket and restarting...[0m
+[0;32mI (214348) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (214358) example: Successfully connected[0m
+[0;32mI (214368) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (214368) example: 015[0m
+[0;32mI (214378) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (214378) example: 0155[0m
+[0;32mI (214388) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (214388) example: 01555[0m
+[0;32mI (214398) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (214398) example: 015555[0m
+[0;32mI (214418) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (214418) example: 0155555[0m
+[0;32mI (214638) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (214638) example: 01555555[0m
+[0;32mI (214848) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (214848) example: 015555555[0m
+[0;32mI (215048) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (215048) example: 0155555555[0m
+[0;32mI (215258) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (215258) example: 01555555555[0m
+[0;32mI (215458) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (215458) example: 015555555555[0m
+[0;32mI (215658) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (215668) example: 0155555555555[0m
+[0;32mI (215868) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (215868) example: 01555555555555[0m
+[0;32mI (216068) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (216068) example: 015555555555555[0m
+[0;32mI (216278) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (216278) example: 0155555555555555[0m
+[0;32mI (216478) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (216478) example: 01555555555555555[0m
+[0;32mI (216688) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (216688) example: 015555555555555555[0m
+[0;32mI (216888) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (216888) example: 0155555555555555555[0m
+[0;32mI (217098) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (217098) example: 01555555555555555555[0m
+[0;32mI (217298) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (217298) example: 015555555555555555555[0m
+[0;32mI (217508) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (217508) example: 0155555555555555555555[0m
+[0;32mI (217718) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (217718) example: 01555555555555555555555[0m
+[0;32mI (217918) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (217918) example: 015555555555555555555555[0m
+[0;32mI (218118) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (218118) example: 0155555555555555555555555[0m
+[0;32mI (218328) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (218328) example: 01555555555555555555555555[0m
+[0;32mI (218528) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (218528) example: 015555555555555555555555555[0m
+[0;32mI (218728) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (218728) example: 0155555555555555555555555555[0m
+[0;32mI (218938) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (218938) example: 01555555555555555555555555555[0m
+[0;32mI (219138) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (219138) example: 015555555555555555555555555555[0m
+[0;32mI (219348) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (219348) example: 0155555555555555555555555555555[0m
+[0;32mI (219558) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (219558) example: 01555555555555555555555555555555[0m
+[0;32mI (219758) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (219758) example: 015555555555555555555555555555555[0m
+[0;32mI (219958) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (219958) example: 0155555555555555555555555555555555[0m
+[0;32mI (220168) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (220168) example: 01555555555555555555555555555555555[0m
+[0;32mI (220368) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (220368) example: 015555555555555555555555555555555555[0m
+[0;32mI (220578) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (220578) example: 0155555555555555555555555555555555555[0m
+[0;32mI (220778) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (220788) example: 01555555555555555555555555555555555555[0m
+[0;32mI (220988) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (220988) example: 015555555555555555555555555555555555555[0m
+[0;32mI (221188) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (221188) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (221398) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (221398) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (221598) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (221608) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (221808) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (221808) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (222008) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (222008) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (222218) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (222218) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (222418) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (222418) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (222628) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (222628) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (222838) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (222848) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (230618) example: recv failed: errno 104[0m
+[1;31mE (230618) example: Shutting down socket and restarting...[0m
+[0;32mI (230618) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (230838) example: Successfully connected[0m
+[0;32mI (231028) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (231028) example: 015[0m
+[0;32mI (231238) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (231238) example: 0155[0m
+[0;32mI (231438) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (231438) example: 01555[0m
+[0;32mI (231648) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (231648) example: 015555[0m
+[0;32mI (231848) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (231848) example: 0155555[0m
+[0;32mI (232048) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (232048) example: 01555555[0m
+[0;32mI (232248) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (232248) example: 015555555[0m
+[0;32mI (232458) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (232458) example: 0155555555[0m
+[0;32mI (232658) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (232658) example: 01555555555[0m
+[0;32mI (232868) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (232868) example: 015555555555[0m
+[0;32mI (233068) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (233068) example: 0155555555555[0m
+[0;32mI (233288) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (233288) example: 01555555555555[0m
+[0;32mI (233488) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (233488) example: 015555555555555[0m
+[0;32mI (233698) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (233698) example: 0155555555555555[0m
+[0;32mI (233898) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (233898) example: 01555555555555555[0m
+[0;32mI (234098) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (234098) example: 015555555555555555[0m
+[0;32mI (234408) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (234408) example: 0155555555555555555[0m
+[0;32mI (234608) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (234608) example: 01555555555555555555[0m
+[0;32mI (234818) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (234818) example: 015555555555555555555[0m
+[0;32mI (235018) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (235018) example: 0155555555555555555555[0m
+[0;32mI (235218) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (235218) example: 01555555555555555555555[0m
+[0;32mI (235428) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (235428) example: 015555555555555555555555[0m
+[0;32mI (235628) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (235628) example: 0155555555555555555555555[0m
+[0;32mI (235838) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (235838) example: 01555555555555555555555555[0m
+[0;32mI (236038) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (236038) example: 015555555555555555555555555[0m
+[0;32mI (236248) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (236248) example: 0155555555555555555555555555[0m
+[0;32mI (236448) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (236448) example: 01555555555555555555555555555[0m
+[0;32mI (236658) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (236658) example: 015555555555555555555555555555[0m
+[0;32mI (236858) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (236858) example: 0155555555555555555555555555555[0m
+[0;32mI (237068) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (237068) example: 01555555555555555555555555555555[0m
+[0;32mI (237268) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (237268) example: 015555555555555555555555555555555[0m
+[0;32mI (237478) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (237478) example: 0155555555555555555555555555555555[0m
+[0;32mI (237678) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (237678) example: 01555555555555555555555555555555555[0m
+[0;32mI (237888) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (237888) example: 015555555555555555555555555555555555[0m
+[0;32mI (238088) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (238088) example: 0155555555555555555555555555555555555[0m
+[0;32mI (238298) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (238298) example: 01555555555555555555555555555555555555[0m
+[0;32mI (238498) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (238498) example: 015555555555555555555555555555555555555[0m
+[0;32mI (238698) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (238698) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (238908) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (238908) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (239118) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (239118) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (239318) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (239318) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (239528) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (239528) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (239728) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (239728) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (239938) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (239938) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (240138) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (240138) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (240338) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (240338) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (247838) example: recv failed: errno 104[0m
+[1;31mE (247838) example: Shutting down socket and restarting...[0m
+[0;32mI (247838) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (247848) example: Successfully connected[0m
+[0;32mI (247868) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (247868) example: 015[0m
+[0;32mI (247878) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (247878) example: 0155[0m
+[0;32mI (247888) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (247888) example: 01555[0m
+[0;32mI (247898) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (247898) example: 015555[0m
+[0;32mI (247908) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (247908) example: 0155555[0m
+[0;32mI (247928) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (247928) example: 01555555[0m
+[0;32mI (247938) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (247938) example: 015555555[0m
+[0;32mI (247948) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (247948) example: 0155555555[0m
+[0;32mI (247958) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (247958) example: 01555555555[0m
+[0;32mI (247968) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (247968) example: 015555555555[0m
+[0;32mI (247978) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (247978) example: 0155555555555[0m
+[0;32mI (247988) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (247988) example: 01555555555555[0m
+[0;32mI (247998) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (247998) example: 015555555555555[0m
+[0;32mI (248008) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (248008) example: 0155555555555555[0m
+[0;32mI (248028) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (248028) example: 01555555555555555[0m
+[0;32mI (248038) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (248038) example: 015555555555555555[0m
+[0;32mI (248048) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (248048) example: 0155555555555555555[0m
+[0;32mI (248058) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (248058) example: 01555555555555555555[0m
+[0;32mI (248068) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (248068) example: 015555555555555555555[0m
+[0;32mI (248078) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (248078) example: 0155555555555555555555[0m
+[0;32mI (248088) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (248088) example: 01555555555555555555555[0m
+[0;32mI (248098) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (248098) example: 015555555555555555555555[0m
+[0;32mI (248108) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (248108) example: 0155555555555555555555555[0m
+[0;32mI (248128) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (248128) example: 01555555555555555555555555[0m
+[0;32mI (248138) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (248138) example: 015555555555555555555555555[0m
+[0;32mI (248148) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (248148) example: 0155555555555555555555555555[0m
+[0;32mI (248158) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (248158) example: 01555555555555555555555555555[0m
+[0;32mI (248198) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (248198) example: 015555555555555555555555555555[0m
+[0;32mI (248238) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (248238) example: 0155555555555555555555555555555[0m
+[0;32mI (248248) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (248248) example: 01555555555555555555555555555555[0m
+[0;32mI (248248) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (248248) example: 015555555555555555555555555555555[0m
+[0;32mI (248268) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (248268) example: 0155555555555555555555555555555555[0m
+[0;32mI (248278) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (248278) example: 01555555555555555555555555555555555[0m
+[0;32mI (248288) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (248288) example: 015555555555555555555555555555555555[0m
+[0;32mI (248298) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (248298) example: 0155555555555555555555555555555555555[0m
+[0;32mI (248308) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (248308) example: 01555555555555555555555555555555555555[0m
+[0;32mI (248328) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (248328) example: 015555555555555555555555555555555555555[0m
+[0;32mI (248338) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (248338) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (248388) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (248388) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (248408) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (248408) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (248448) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (248448) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (248448) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (248448) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (248468) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (248468) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (248478) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (248478) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (248488) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (248488) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (248498) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (248498) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (259178) example: recv failed: errno 104[0m
+[1;31mE (259178) example: Shutting down socket and restarting...[0m
+[0;32mI (259188) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (259388) example: Successfully connected[0m
+[0;32mI (259598) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (259598) example: 0112345[0m
+[0;32mI (259798) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (259798) example: 011234512345[0m
+[0;32mI (260008) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (260008) example: 01123451234512345[0m
+[0;32mI (260208) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (260208) example: 0112345123451234512345[0m
+[0;32mI (260408) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (260408) example: 011234512345123451234512345[0m
+[0;32mI (260618) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (260618) example: 01123451234512345123451234512345[0m
+[0;32mI (260828) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (260828) example: 0112345123451234512345123451234512345[0m
+[0;32mI (261028) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (261028) example: 011234512345123451234512345123451234512345[0m
+[0;32mI (261238) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (261238) example: 01123451234512345123451234512345123451234512345[0m
+[0;32mI (261448) example: Received 50 bytes from 192.168.2.124:[0m
+[0;32mI (261448) example: 01123451234512345123451234512345123451234512345235[0m
+[1;31mE (267328) example: recv failed: errno 104[0m
+[1;31mE (267328) example: Shutting down socket and restarting...[0m
+[0;32mI (267328) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (267338) example: Successfully connected[0m
+[0;32mI (267348) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (267348) example: 015[0m
+[0;32mI (267358) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (267358) example: 0155[0m
+[0;32mI (267378) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (267378) example: 01555[0m
+[0;32mI (267388) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (267388) example: 015555[0m
+[0;32mI (267398) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (267398) example: 0155555[0m
+[0;32mI (267408) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (267408) example: 01555555[0m
+[0;32mI (267418) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (267418) example: 015555555[0m
+[0;32mI (267428) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (267428) example: 0155555555[0m
+[0;32mI (267438) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (267438) example: 01555555555[0m
+[0;32mI (267448) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (267448) example: 015555555555[0m
+[0;32mI (267448) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (267448) example: 0155555555555[0m
+[0;32mI (267458) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (267458) example: 01555555555555[0m
+[0;32mI (267478) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (267478) example: 015555555555555[0m
+[0;32mI (267488) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (267488) example: 0155555555555555[0m
+[0;32mI (267498) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (267498) example: 01555555555555555[0m
+[0;32mI (267508) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (267508) example: 015555555555555555[0m
+[0;32mI (267518) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (267518) example: 0155555555555555555[0m
+[0;32mI (267528) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (267528) example: 01555555555555555555[0m
+[0;32mI (267538) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (267538) example: 015555555555555555555[0m
+[0;32mI (267548) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (267548) example: 0155555555555555555555[0m
+[0;32mI (267558) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (267558) example: 01555555555555555555555[0m
+[0;32mI (267568) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (267568) example: 015555555555555555555555[0m
+[0;32mI (267588) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (267588) example: 0155555555555555555555555[0m
+[0;32mI (267598) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (267598) example: 01555555555555555555555555[0m
+[0;32mI (267608) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (267608) example: 015555555555555555555555555[0m
+[0;32mI (267618) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (267618) example: 0155555555555555555555555555[0m
+[0;32mI (267628) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (267628) example: 01555555555555555555555555555[0m
+[0;32mI (267638) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (267638) example: 015555555555555555555555555555[0m
+[0;32mI (267648) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (267648) example: 0155555555555555555555555555555[0m
+[0;32mI (267658) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (267658) example: 01555555555555555555555555555555[0m
+[0;32mI (267668) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (267668) example: 015555555555555555555555555555555[0m
+[0;32mI (267688) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (267688) example: 0155555555555555555555555555555555[0m
+[0;32mI (267698) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (267698) example: 01555555555555555555555555555555555[0m
+[0;32mI (267708) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (267708) example: 015555555555555555555555555555555555[0m
+[0;32mI (267718) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (267718) example: 0155555555555555555555555555555555555[0m
+[0;32mI (267728) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (267728) example: 01555555555555555555555555555555555555[0m
+[0;32mI (267738) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (267738) example: 015555555555555555555555555555555555555[0m
+[0;32mI (267748) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (267748) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (267758) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (267758) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (267768) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (267768) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (267788) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (267788) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (267798) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (267808) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (267808) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (267808) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (267828) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (267828) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (267838) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (267838) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (267848) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (267848) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (272698) example: recv failed: errno 104[0m
+[1;31mE (272698) example: Shutting down socket and restarting...[0m
+[0;32mI (272708) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (272748) example: Successfully connected[0m
+[0;32mI (272758) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (272768) example: 0112345[0m
+[0;32mI (272768) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (272768) example: 011234512345[0m
+[0;32mI (272778) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (272788) example: 01123451234512345[0m
+[0;32mI (272808) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (272808) example: 0112345123451234512345[0m
+[0;32mI (272818) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (272818) example: 011234512345123451234512345[0m
+[0;32mI (272828) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (272828) example: 01123451234512345123451234512345[0m
+[0;32mI (272838) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (272838) example: 0112345123451234512345123451234512345[0m
+[0;32mI (272848) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (272848) example: 011234512345123451234512345123451234512345[0m
+[0;32mI (272858) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (272858) example: 01123451234512345123451234512345123451234512345[0m
+[0;32mI (272868) example: Received 52 bytes from 192.168.2.124:[0m
+[0;32mI (272868) example: 0112345123451234512345123451234512345123451234512345[0m
+[1;31mE (283668) example: recv failed: errno 104[0m
+[1;31mE (283668) example: Shutting down socket and restarting...[0m
+[0;32mI (283668) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (283868) example: Successfully connected[0m
+[0;32mI (284068) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (284068) example: 015[0m
+[0;32mI (284278) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (284278) example: 0155[0m
+[0;32mI (284478) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (284478) example: 01555[0m
+[0;32mI (284688) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (284688) example: 015555[0m
+[0;32mI (284888) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (284888) example: 0155555[0m
+[0;32mI (285098) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (285098) example: 01555555[0m
+[0;32mI (285298) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (285298) example: 015555555[0m
+[0;32mI (285498) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (285508) example: 0155555555[0m
+[0;32mI (285708) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (285708) example: 01555555555[0m
+[0;32mI (285918) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (285918) example: 015555555555[0m
+[0;32mI (286118) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (286118) example: 0155555555555[0m
+[0;32mI (286318) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (286318) example: 01555555555555[0m
+[0;32mI (286528) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (286528) example: 015555555555555[0m
+[0;32mI (286728) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (286728) example: 0155555555555555[0m
+[0;32mI (286938) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (286938) example: 01555555555555555[0m
+[0;32mI (287158) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (287158) example: 015555555555555555[0m
+[0;32mI (287348) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (287348) example: 0155555555555555555[0m
+[0;32mI (287548) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (287548) example: 01555555555555555555[0m
+[0;32mI (287758) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (287758) example: 015555555555555555555[0m
+[0;32mI (287958) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (287958) example: 0155555555555555555555[0m
+[0;32mI (288168) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (288168) example: 01555555555555555555555[0m
+[0;32mI (288368) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (288368) example: 015555555555555555555555[0m
+[0;32mI (288578) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (288578) example: 0155555555555555555555555[0m
+[0;32mI (288778) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (288778) example: 01555555555555555555555555[0m
+[0;32mI (288988) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (288988) example: 015555555555555555555555555[0m
+[0;32mI (289188) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (289188) example: 0155555555555555555555555555[0m
+[0;32mI (289388) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (289388) example: 01555555555555555555555555555[0m
+[0;32mI (289598) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (289598) example: 015555555555555555555555555555[0m
+[0;32mI (289798) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (289798) example: 0155555555555555555555555555555[0m
+[0;32mI (290008) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (290008) example: 01555555555555555555555555555555[0m
+[0;32mI (290218) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (290218) example: 015555555555555555555555555555555[0m
+[0;32mI (290418) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (290418) example: 0155555555555555555555555555555555[0m
+[0;32mI (290628) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (290628) example: 01555555555555555555555555555555555[0m
+[0;32mI (290828) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (290828) example: 015555555555555555555555555555555555[0m
+[0;32mI (291028) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (291028) example: 0155555555555555555555555555555555555[0m
+[0;32mI (291238) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (291238) example: 01555555555555555555555555555555555555[0m
+[0;32mI (291438) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (291438) example: 015555555555555555555555555555555555555[0m
+[0;32mI (291648) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (291648) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (291858) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (291868) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (292058) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (292058) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (292258) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (292258) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (292468) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (292468) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (292668) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (292668) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (292878) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (292878) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (293078) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (293078) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (293288) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (293288) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (303328) example: recv failed: errno 104[0m
+[1;31mE (303328) example: Shutting down socket and restarting...[0m
+[0;32mI (303328) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (303348) example: Successfully connected[0m
+[0;32mI (303368) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (303368) example: 015[0m
+[0;32mI (303378) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (303378) example: 0155[0m
+[0;32mI (303388) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (303388) example: 01555[0m
+[0;32mI (303398) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (303398) example: 015555[0m
+[0;32mI (303408) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (303408) example: 0155555[0m
+[0;32mI (303428) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (303428) example: 01555555[0m
+[0;32mI (303438) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (303438) example: 015555555[0m
+[0;32mI (303448) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (303448) example: 0155555555[0m
+[0;32mI (303448) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (303448) example: 01555555555[0m
+[0;32mI (303468) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (303468) example: 015555555555[0m
+[0;32mI (303528) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (303538) example: 0155555555555[0m
+[0;32mI (303538) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (303548) example: 01555555555555[0m
+[0;32mI (303558) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (303558) example: 015555555555555[0m
+[0;32mI (303578) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (303578) example: 0155555555555555[0m
+[0;32mI (303588) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (303588) example: 01555555555555555[0m
+[0;32mI (303598) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (303598) example: 015555555555555555[0m
+[0;32mI (303598) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (303608) example: 0155555555555555555[0m
+[0;32mI (303608) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (303608) example: 01555555555555555555[0m
+[0;32mI (303638) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (303638) example: 015555555555555555555[0m
+[0;32mI (303648) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (303648) example: 0155555555555555555555[0m
+[0;32mI (303658) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (303658) example: 01555555555555555555555[0m
+[0;32mI (303678) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (303678) example: 015555555555555555555555[0m
+[0;32mI (303688) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (303688) example: 0155555555555555555555555[0m
+[0;32mI (303698) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (303698) example: 01555555555555555555555555[0m
+[0;32mI (303708) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (303708) example: 015555555555555555555555555[0m
+[0;32mI (303708) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (303718) example: 0155555555555555555555555555[0m
+[0;32mI (303738) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (303738) example: 01555555555555555555555555555[0m
+[0;32mI (303748) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (303758) example: 015555555555555555555555555555[0m
+[0;32mI (303758) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (303758) example: 0155555555555555555555555555555[0m
+[0;32mI (303778) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (303778) example: 01555555555555555555555555555555[0m
+[0;32mI (303788) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (303788) example: 015555555555555555555555555555555[0m
+[0;32mI (303798) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (303798) example: 0155555555555555555555555555555555[0m
+[0;32mI (303808) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (303808) example: 01555555555555555555555555555555555[0m
+[0;32mI (303818) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (303818) example: 015555555555555555555555555555555555[0m
+[0;32mI (303838) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (303838) example: 0155555555555555555555555555555555555[0m
+[0;32mI (303848) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (303848) example: 01555555555555555555555555555555555555[0m
+[0;32mI (303858) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (303858) example: 015555555555555555555555555555555555555[0m
+[0;32mI (303878) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (303878) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (303888) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (303888) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (303898) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (303898) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (303908) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (303908) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (303918) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (303918) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (303938) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (303938) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (303948) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (303948) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (303958) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (303958) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (303978) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (303978) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (314688) example: recv failed: errno 104[0m
+[1;31mE (314688) example: Shutting down socket and restarting...[0m
+[0;32mI (314688) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (314888) example: Successfully connected[0m
+[0;32mI (315098) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (315098) example: 015[0m
+[0;32mI (315298) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (315298) example: 0155[0m
+[0;32mI (315508) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (315508) example: 01555[0m
+[0;32mI (315708) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (315718) example: 015555[0m
+[0;32mI (315918) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (315918) example: 0155555[0m
+[0;32mI (316118) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (316118) example: 01555555[0m
+[0;32mI (316328) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (316328) example: 015555555[0m
+[0;32mI (316528) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (316528) example: 0155555555[0m
+[0;32mI (316728) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (316738) example: 01555555555[0m
+[0;32mI (316938) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (316938) example: 015555555555[0m
+[0;32mI (317138) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (317138) example: 0155555555555[0m
+[0;32mI (317348) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (317348) example: 01555555555555[0m
+[0;32mI (317548) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (317558) example: 015555555555555[0m
+[0;32mI (317578) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (317578) example: 0155555555555555[0m
+[0;32mI (317588) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (317588) example: 01555555555555555[0m
+[0;32mI (317598) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (317598) example: 015555555555555555[0m
+[0;32mI (317608) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (317608) example: 0155555555555555555[0m
+[0;32mI (317618) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (317618) example: 01555555555555555555[0m
+[0;32mI (317628) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (317628) example: 015555555555555555555[0m
+[0;32mI (317638) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (317638) example: 0155555555555555555555[0m
+[0;32mI (317658) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (317658) example: 01555555555555555555555[0m
+[0;32mI (317668) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (317668) example: 015555555555555555555555[0m
+[0;32mI (317678) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (317678) example: 0155555555555555555555555[0m
+[0;32mI (317688) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (317688) example: 01555555555555555555555555[0m
+[0;32mI (317708) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (317708) example: 015555555555555555555555555[0m
+[0;32mI (317708) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (317708) example: 0155555555555555555555555555[0m
+[0;32mI (317728) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (317728) example: 01555555555555555555555555555[0m
+[0;32mI (317728) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (317728) example: 015555555555555555555555555555[0m
+[0;32mI (317738) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (317738) example: 0155555555555555555555555555555[0m
+[0;32mI (317808) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (317808) example: 01555555555555555555555555555555[0m
+[0;32mI (317818) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (317818) example: 015555555555555555555555555555555[0m
+[0;32mI (317828) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (317828) example: 0155555555555555555555555555555555[0m
+[0;32mI (317828) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (317838) example: 01555555555555555555555555555555555[0m
+[0;32mI (317838) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (317838) example: 015555555555555555555555555555555555[0m
+[0;32mI (317868) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (317868) example: 0155555555555555555555555555555555555[0m
+[0;32mI (317878) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (317878) example: 01555555555555555555555555555555555555[0m
+[0;32mI (317888) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (317888) example: 015555555555555555555555555555555555555[0m
+[0;32mI (317898) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (317898) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (317908) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (317908) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (317918) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (317918) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (317928) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (317928) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (317938) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (317938) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (317968) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (317968) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (317978) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (317978) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (317988) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (317988) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (317998) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (317998) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (328728) example: recv failed: errno 104[0m
+[1;31mE (328728) example: Shutting down socket and restarting...[0m
+[0;32mI (328728) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (328848) example: Successfully connected[0m
+[0;32mI (329128) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (329128) example: 011235[0m
+[0;32mI (329328) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (329338) example: 0112351235[0m
+[0;32mI (329568) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (329568) example: 01123512351235[0m
+[0;32mI (329738) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (329738) example: 011235123512355[0m
+[0;32mI (329948) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (329948) example: 0112351235123555[0m
+[0;32mI (330148) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (330148) example: 01123512351235555[0m
+[0;32mI (330368) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (330368) example: 011235123512355555[0m
+[0;32mI (330558) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (330558) example: 0112351235123555555[0m
+[0;32mI (330768) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (330768) example: 01123512351235555555[0m
+[0;32mI (330968) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (330968) example: 011235123512355555555[0m
+[0;32mI (331178) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (331178) example: 0112351235123555555555[0m
+[0;32mI (331378) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (331378) example: 01123512351235555555555[0m
+[0;32mI (331588) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (331588) example: 011235123512355555555555[0m
+[0;32mI (331608) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (331608) example: 0112351235123555555555555[0m
+[0;32mI (331618) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (331618) example: 01123512351235555555555555[0m
+[0;32mI (331638) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (331638) example: 011235123512355555555555555[0m
+[0;32mI (331638) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (331638) example: 0112351235123555555555555555[0m
+[0;32mI (331648) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (331648) example: 01123512351235555555555555555[0m
+[0;32mI (331658) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (331658) example: 011235123512355555555555555555[0m
+[0;32mI (331668) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (331668) example: 0112351235123555555555555555555[0m
+[0;32mI (331688) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (331688) example: 01123512351235555555555555555555[0m
+[0;32mI (331698) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (331698) example: 011235123512355555555555555555555[0m
+[0;32mI (331708) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (331708) example: 0112351235123555555555555555555555[0m
+[0;32mI (331718) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (331718) example: 01123512351235555555555555555555555[0m
+[0;32mI (331728) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (331728) example: 011235123512355555555555555555555555[0m
+[0;32mI (331738) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (331738) example: 0112351235123555555555555555555555555[0m
+[0;32mI (331748) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (331748) example: 01123512351235555555555555555555555555[0m
+[0;32mI (331758) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (331758) example: 011235123512355555555555555555555555555[0m
+[0;32mI (331768) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (331768) example: 0112351235123555555555555555555555555555[0m
+[0;32mI (331798) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (331798) example: 01123512351235555555555555555555555555555[0m
+[0;32mI (331808) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (331808) example: 011235123512355555555555555555555555555555[0m
+[0;32mI (331818) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (331818) example: 0112351235123555555555555555555555555555555[0m
+[0;32mI (331828) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (331828) example: 01123512351235555555555555555555555555555555[0m
+[0;32mI (331838) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (331838) example: 011235123512355555555555555555555555555555555[0m
+[0;32mI (331848) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (331848) example: 0112351235123555555555555555555555555555555555[0m
+[0;32mI (331858) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (331858) example: 01123512351235555555555555555555555555555555555[0m
+[0;32mI (331868) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (331868) example: 011235123512355555555555555555555555555555555555[0m
+[1;31mE (342348) example: recv failed: errno 104[0m
+[1;31mE (342348) example: Shutting down socket and restarting...[0m
+[0;32mI (342348) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (342358) example: Successfully connected[0m
+[0;32mI (342378) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (342378) example: 011235[0m
+[0;32mI (342388) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (342388) example: 0112351235[0m
+[0;32mI (342388) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (342398) example: 01123512351235[0m
+[0;32mI (342418) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (342418) example: 011235123512351235[0m
+[0;32mI (342438) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (342448) example: 0112351235123512351235[0m
+[0;32mI (342448) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (342458) example: 01123512351235123512351235[0m
+[0;32mI (342458) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (342458) example: 011235123512351235123512351235[0m
+[0;32mI (342468) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (342468) example: 0112351235123512351235123512351235[0m
+[0;32mI (342488) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (342488) example: 01123512351235123512351235123512351235[0m
+[0;32mI (342498) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (342498) example: 011235123512351235123512351235123512351235[0m
+[0;32mI (342508) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (342508) example: 0112351235123512351235123512351235123512351235[0m
+[0;32mI (342518) example: Received 50 bytes from 192.168.2.124:[0m
+[0;32mI (342518) example: 01123512351235123512351235123512351235123512351235[0m
+[1;31mE (353188) example: recv failed: errno 104[0m
+[1;31mE (353188) example: Shutting down socket and restarting...[0m
+[0;32mI (353188) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (353398) example: Successfully connected[0m
+[0;32mI (353608) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (353608) example: 015[0m
+[0;32mI (353808) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (353808) example: 0155[0m
+[0;32mI (354008) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (354008) example: 01555[0m
+[0;32mI (354218) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (354218) example: 015555[0m
+[0;32mI (354418) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (354418) example: 0155555[0m
+[0;32mI (354618) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (354628) example: 01555555[0m
+[0;32mI (354828) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (354828) example: 015555555[0m
+[0;32mI (355038) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (355038) example: 0155555555[0m
+[0;32mI (355238) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (355238) example: 01555555555[0m
+[0;32mI (355448) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (355448) example: 015555555555[0m
+[0;32mI (355648) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (355648) example: 0155555555555[0m
+[0;32mI (355858) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (355858) example: 01555555555555[0m
+[0;32mI (356058) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (356058) example: 015555555555555[0m
+[0;32mI (356158) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (356158) example: 0155555555555555[0m
+[0;32mI (356168) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (356168) example: 01555555555555555[0m
+[0;32mI (356178) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (356178) example: 015555555555555555[0m
+[0;32mI (356188) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (356188) example: 0155555555555555555[0m
+[0;32mI (356198) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (356208) example: 01555555555555555555[0m
+[0;32mI (356208) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (356208) example: 015555555555555555555[0m
+[0;32mI (356218) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (356218) example: 0155555555555555555555[0m
+[0;32mI (356228) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (356228) example: 01555555555555555555555[0m
+[0;32mI (356238) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (356238) example: 015555555555555555555555[0m
+[0;32mI (356248) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (356248) example: 0155555555555555555555555[0m
+[0;32mI (356258) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (356258) example: 01555555555555555555555555[0m
+[0;32mI (356268) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (356268) example: 015555555555555555555555555[0m
+[0;32mI (356278) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (356278) example: 0155555555555555555555555555[0m
+[0;32mI (356288) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (356288) example: 01555555555555555555555555555[0m
+[0;32mI (356298) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (356298) example: 015555555555555555555555555555[0m
+[0;32mI (356308) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (356308) example: 0155555555555555555555555555555[0m
+[0;32mI (356318) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (356318) example: 01555555555555555555555555555555[0m
+[0;32mI (356328) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (356328) example: 015555555555555555555555555555555[0m
+[0;32mI (356338) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (356338) example: 0155555555555555555555555555555555[0m
+[0;32mI (356348) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (356348) example: 01555555555555555555555555555555555[0m
+[0;32mI (356368) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (356368) example: 015555555555555555555555555555555555[0m
+[0;32mI (356378) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (356378) example: 0155555555555555555555555555555555555[0m
+[0;32mI (356388) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (356388) example: 01555555555555555555555555555555555555[0m
+[0;32mI (356398) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (356398) example: 015555555555555555555555555555555555555[0m
+[0;32mI (356418) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (356418) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (356418) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (356418) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (356438) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (356438) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (356448) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (356448) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (356478) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (356478) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (356488) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (356488) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (356488) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (356488) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (356508) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (356508) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (356518) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (356518) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (367218) example: recv failed: errno 104[0m
+[1;31mE (367218) example: Shutting down socket and restarting...[0m
+[0;32mI (367218) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (367428) example: Successfully connected[0m
+[0;32mI (367628) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (367628) example: 0112345[0m
+[0;32mI (367838) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (367838) example: 011234512345[0m
+[0;32mI (368038) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (368038) example: 01123451234512345[0m
+[0;32mI (368248) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (368248) example: 0112345123451234512345[0m
+[0;32mI (368448) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (368448) example: 011234512345123451234512345[0m
+[0;32mI (368658) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (368658) example: 01123451234512345123451234512345[0m
+[0;32mI (368858) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (368858) example: 0112345123451234512345123451234512345[0m
+[0;32mI (369068) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (369068) example: 011234512345123451234512345123451234512345[0m
+[0;32mI (369268) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (369268) example: 01123451234512345123451234512345123451234512345[0m
+[0;32mI (369468) example: Received 52 bytes from 192.168.2.124:[0m
+[0;32mI (369468) example: 0112345123451234512345123451234512345123451234512345[0m
+[1;31mE (375358) example: recv failed: errno 104[0m
+[1;31mE (375368) example: Shutting down socket and restarting...[0m
+[0;32mI (375368) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (375378) example: Successfully connected[0m
+[0;32mI (375388) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (375388) example: 0135[0m
+[0;32mI (375398) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (375398) example: 013535[0m
+[0;32mI (375418) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (375418) example: 01353535[0m
+[0;32mI (375428) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (375428) example: 0135353535[0m
+[0;32mI (375448) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (375448) example: 013535353535[0m
+[0;32mI (375458) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (375458) example: 01353535353535[0m
+[0;32mI (375468) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (375468) example: 0135353535353535[0m
+[0;32mI (375478) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (375478) example: 013535353535353535[0m
+[0;32mI (375488) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (375488) example: 01353535353535353535[0m
+[0;32mI (375498) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (375498) example: 0135353535353535353535[0m
+[0;32mI (375518) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (375518) example: 013535353535353535353535[0m
+[0;32mI (375518) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (375528) example: 01353535353535353535353535[0m
+[0;32mI (375528) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (375528) example: 0135353535353535353535353535[0m
+[0;32mI (375538) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (375538) example: 013535353535353535353535353535[0m
+[0;32mI (375548) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (375558) example: 01353535353535353535353535353535[0m
+[0;32mI (375568) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (375568) example: 0135353535353535353535353535353535[0m
+[0;32mI (375578) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (375578) example: 013535353535353535353535353535353535[0m
+[0;32mI (375588) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (375588) example: 01353535353535353535353535353535353535[0m
+[0;32mI (375598) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (375598) example: 0135353535353535353535353535353535353535[0m
+[0;32mI (375618) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (375618) example: 013535353535353535353535353535353535353535[0m
+[0;32mI (375628) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (375628) example: 01353535353535353535353535353535353535353535[0m
+[0;32mI (375638) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (375638) example: 0135353535353535353535353535353535353535353535[0m
+[0;32mI (375648) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (375648) example: 013535353535353535353535353535353535353535353535[0m
+[1;31mE (386168) example: recv failed: errno 104[0m
+[1;31mE (386168) example: Shutting down socket and restarting...[0m
+[0;32mI (386168) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (386368) example: Successfully connected[0m
+[0;32mI (386568) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (386578) example: 011235[0m
+[0;32mI (386778) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (386778) example: 0112351235[0m
+[0;32mI (386978) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (386978) example: 01123512351235[0m
+[0;32mI (387188) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (387188) example: 011235123512351235[0m
+[0;32mI (387388) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (387388) example: 0112351235123512351235[0m
+[0;32mI (387598) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (387598) example: 01123512351235123512351235[0m
+[0;32mI (387808) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (387808) example: 011235123512351235123512351235[0m
+[0;32mI (388008) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (388008) example: 0112351235123512351235123512351235[0m
+[0;32mI (388208) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (388208) example: 01123512351235123512351235123512351235[0m
+[0;32mI (388418) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (388418) example: 011235123512351235123512351235123512351235[0m
+[0;32mI (388628) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (388628) example: 0112351235123512351235123512351235123512351235[0m
+[0;32mI (388828) example: Received 50 bytes from 192.168.2.124:[0m
+[0;32mI (388828) example: 01123512351235123512351235123512351235123512351235[0m
+[1;31mE (395178) example: recv failed: errno 104[0m
+[1;31mE (395178) example: Shutting down socket and restarting...[0m
+[0;32mI (395178) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (395378) example: Successfully connected[0m
+[0;32mI (395388) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (395388) example: 0112345[0m
+[0;32mI (395398) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (395398) example: 011234512345[0m
+[0;32mI (395408) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (395408) example: 01123451234512345[0m
+[0;32mI (395418) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (395418) example: 0112345123451234512345[0m
+[0;32mI (395428) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (395428) example: 011234512345123451234512345[0m
+[0;32mI (395438) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (395438) example: 01123451234512345123451234512345[0m
+[0;32mI (395448) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (395458) example: 0112345123451234512345123451234512345[0m
+[0;32mI (395458) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (395458) example: 011234512345123451234512345123451234512345[0m
+[0;32mI (395478) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (395478) example: 01123451234512345123451234512345123451234512345[0m
+[0;32mI (395488) example: Received 52 bytes from 192.168.2.124:[0m
+[0;32mI (395488) example: 0112345123451234512345123451234512345123451234512345[0m
+[1;31mE (406088) example: recv failed: errno 104[0m
+[1;31mE (406088) example: Shutting down socket and restarting...[0m
+[0;32mI (406088) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (406098) example: Successfully connected[0m
+[0;32mI (406108) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (406108) example: 0112345[0m
+[0;32mI (406118) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (406118) example: 011234512345[0m
+[0;32mI (406138) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (406138) example: 01123451234512345[0m
+[0;32mI (406148) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (406148) example: 0112345123451234512345[0m
+[0;32mI (406148) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (406158) example: 011234512345123451234512345[0m
+[0;32mI (406168) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (406168) example: 01123451234512345123451234512345[0m
+[0;32mI (406168) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (406168) example: 0112345123451234512345123451234512345[0m
+[0;32mI (406178) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (406178) example: 011234512345123451234512345123451234512345[0m
+[0;32mI (406188) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (406188) example: 01123451234512345123451234512345123451234512345[0m
+[0;32mI (406198) example: Received 52 bytes from 192.168.2.124:[0m
+[0;32mI (406208) example: 0112345123451234512345123451234512345123451234512345[0m
+[1;31mE (416678) example: recv failed: errno 104[0m
+[1;31mE (416678) example: Shutting down socket and restarting...[0m
+[0;32mI (416678) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (416888) example: Successfully connected[0m
+[0;32mI (417108) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (417108) example: 015[0m
+[0;32mI (417308) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (417308) example: 0155[0m
+[0;32mI (417498) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (417498) example: 01555[0m
+[0;32mI (417708) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (417708) example: 015555[0m
+[0;32mI (417918) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (417918) example: 0155555[0m
+[0;32mI (418118) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (418118) example: 01555555[0m
+[0;32mI (418318) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (418318) example: 015555555[0m
+[0;32mI (418528) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (418528) example: 0155555555[0m
+[0;32mI (418728) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (418728) example: 01555555555[0m
+[0;32mI (418948) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (418948) example: 015555555555[0m
+[0;32mI (419138) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (419138) example: 0155555555555[0m
+[0;32mI (419348) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (419348) example: 01555555555555[0m
+[0;32mI (419548) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (419548) example: 015555555555555[0m
+[0;32mI (419778) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (419788) example: 0155555555555555[0m
+[0;32mI (419828) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (419828) example: 01555555555555555[0m
+[0;32mI (419928) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (419928) example: 015555555555555555[0m
+[0;32mI (419928) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (419938) example: 0155555555555555555[0m
+[0;32mI (419938) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (419938) example: 01555555555555555555[0m
+[0;32mI (419978) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (419988) example: 015555555555555555555[0m
+[0;32mI (420018) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (420018) example: 0155555555555555555555[0m
+[0;32mI (420028) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (420028) example: 01555555555555555555555[0m
+[0;32mI (420038) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (420038) example: 015555555555555555555555[0m
+[0;32mI (420208) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (420208) example: 0155555555555555555555555[0m
+[0;32mI (420488) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (420488) example: 01555555555555555555555555[0m
+[0;32mI (420678) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (420678) example: 015555555555555555555555555[0m
+[0;32mI (420878) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (420878) example: 0155555555555555555555555555[0m
+[0;32mI (421088) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (421088) example: 01555555555555555555555555555[0m
+[0;32mI (421288) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (421288) example: 015555555555555555555555555555[0m
+[0;32mI (421498) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (421498) example: 0155555555555555555555555555555[0m
+[0;32mI (421698) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (421698) example: 01555555555555555555555555555555[0m
+[0;32mI (421898) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (421908) example: 015555555555555555555555555555555[0m
+[0;32mI (422118) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (422118) example: 0155555555555555555555555555555555[0m
+[0;32mI (422318) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (422318) example: 01555555555555555555555555555555555[0m
+[0;32mI (422538) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (422548) example: 015555555555555555555555555555555555[0m
+[0;32mI (422738) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (422738) example: 0155555555555555555555555555555555555[0m
+[0;32mI (422828) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (422838) example: 01555555555555555555555555555555555555[0m
+[0;32mI (422978) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (422978) example: 015555555555555555555555555555555555555[0m
+[0;32mI (422988) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (422988) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (422998) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (422998) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (423008) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (423008) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (423018) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (423018) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (423058) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (423058) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (423068) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (423068) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (423078) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (423078) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (423088) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (423088) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (423098) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (423098) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (433678) example: recv failed: errno 104[0m
+[1;31mE (433678) example: Shutting down socket and restarting...[0m
+[0;32mI (433688) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (433888) example: Successfully connected[0m
+[0;32mI (434098) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (434098) example: 0112345[0m
+[0;32mI (434288) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (434288) example: 011234512345[0m
+[0;32mI (434498) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (434498) example: 01123451234512345[0m
+[0;32mI (434698) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (434698) example: 0112345123451234512345[0m
+[0;32mI (434908) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (434908) example: 011234512345123451234512345[0m
+[0;32mI (435108) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (435108) example: 01123451234512345123451234512345[0m
+[0;32mI (435318) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (435318) example: 0112345123451234512345123451234512345[0m
+[0;32mI (435518) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (435518) example: 011234512345123451234512345123451234512345[0m
+[0;32mI (435728) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (435728) example: 01123451234512345123451234512345123451234512345[0m
+[0;32mI (435938) example: Received 52 bytes from 192.168.2.124:[0m
+[0;32mI (435938) example: 0112345123451234512345123451234512345123451234512345[0m
+[1;31mE (442178) example: recv failed: errno 104[0m
+[1;31mE (442178) example: Shutting down socket and restarting...[0m
+[0;32mI (442178) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (442378) example: Successfully connected[0m
+[0;32mI (442438) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (442438) example: 015[0m
+[0;32mI (442448) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (442448) example: 0155[0m
+[0;32mI (442458) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (442458) example: 01555[0m
+[0;32mI (442468) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (442468) example: 015555[0m
+[0;32mI (442488) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (442488) example: 0155555[0m
+[0;32mI (442498) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (442498) example: 01555555[0m
+[0;32mI (442508) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (442508) example: 015555555[0m
+[0;32mI (442518) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (442518) example: 0155555555[0m
+[0;32mI (442528) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (442538) example: 01555555555[0m
+[0;32mI (442538) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (442538) example: 015555555555[0m
+[0;32mI (442548) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (442548) example: 0155555555555[0m
+[0;32mI (442558) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (442558) example: 01555555555555[0m
+[0;32mI (442568) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (442568) example: 015555555555555[0m
+[0;32mI (442588) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (442588) example: 0155555555555555[0m
+[0;32mI (442598) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (442598) example: 01555555555555555[0m
+[0;32mI (442608) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (442608) example: 015555555555555555[0m
+[0;32mI (442618) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (442618) example: 0155555555555555555[0m
+[0;32mI (442628) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (442628) example: 01555555555555555555[0m
+[0;32mI (442638) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (442638) example: 015555555555555555555[0m
+[0;32mI (442648) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (442648) example: 0155555555555555555555[0m
+[0;32mI (442658) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (442658) example: 01555555555555555555555[0m
+[0;32mI (442668) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (442668) example: 015555555555555555555555[0m
+[0;32mI (442678) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (442678) example: 0155555555555555555555555[0m
+[0;32mI (442698) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (442698) example: 01555555555555555555555555[0m
+[0;32mI (442708) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (442708) example: 015555555555555555555555555[0m
+[0;32mI (442718) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (442718) example: 0155555555555555555555555555[0m
+[0;32mI (442728) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (442728) example: 01555555555555555555555555555[0m
+[0;32mI (442738) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (442738) example: 015555555555555555555555555555[0m
+[0;32mI (442748) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (442748) example: 0155555555555555555555555555555[0m
+[0;32mI (442758) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (442758) example: 01555555555555555555555555555555[0m
+[0;32mI (442768) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (442768) example: 015555555555555555555555555555555[0m
+[0;32mI (442778) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (442778) example: 0155555555555555555555555555555555[0m
+[0;32mI (442798) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (442798) example: 01555555555555555555555555555555555[0m
+[0;32mI (442808) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (442808) example: 015555555555555555555555555555555555[0m
+[0;32mI (442818) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (442818) example: 0155555555555555555555555555555555555[0m
+[0;32mI (442858) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (442858) example: 01555555555555555555555555555555555555[0m
+[0;32mI (442868) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (442868) example: 015555555555555555555555555555555555555[0m
+[0;32mI (442878) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (442878) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (442898) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (442898) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (442908) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (442908) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (442918) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (442918) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (442928) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (442928) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (442948) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (442948) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (442948) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (442948) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (442958) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (442958) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (442978) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (442978) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (453648) example: recv failed: errno 104[0m
+[1;31mE (453648) example: Shutting down socket and restarting...[0m
+[0;32mI (453648) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (453858) example: Successfully connected[0m
+[0;32mI (454058) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (454058) example: 0112345[0m
+[0;32mI (454268) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (454268) example: 011234512345[0m
+[0;32mI (454468) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (454468) example: 01123451234512345[0m
+[0;32mI (454668) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (454678) example: 0112345123451234512345[0m
+[0;32mI (454878) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (454878) example: 011234512345123451234512345[0m
+[0;32mI (455088) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (455088) example: 01123451234512345123451234512345[0m
+[0;32mI (455298) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (455298) example: 0112345123451234512345123451234512345[0m
+[0;32mI (455598) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (455598) example: 011234512345123451234512345123451234512345[0m
+[0;32mI (455798) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (455798) example: 01123451234512345123451234512345123451234512345[0m
+[0;32mI (455998) example: Received 52 bytes from 192.168.2.124:[0m
+[0;32mI (455998) example: 0112345123451234512345123451234512345123451234512345[0m
+[1;31mE (466358) example: recv failed: errno 104[0m
+[1;31mE (466358) example: Shutting down socket and restarting...[0m
+[0;32mI (466358) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (466368) example: Successfully connected[0m
+[0;32mI (466378) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (466378) example: 01235[0m
+[0;32mI (466398) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (466398) example: 01235235[0m
+[0;32mI (466408) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (466408) example: 01235235235[0m
+[0;32mI (466408) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (466408) example: 01235235235235[0m
+[0;32mI (466418) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (466418) example: 01235235235235235[0m
+[0;32mI (466428) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (466428) example: 01235235235235235235[0m
+[0;32mI (466448) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (466448) example: 01235235235235235235235[0m
+[0;32mI (466458) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (466458) example: 01235235235235235235235235[0m
+[0;32mI (466468) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (466468) example: 01235235235235235235235235235[0m
+[0;32mI (466478) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (466478) example: 01235235235235235235235235235235[0m
+[0;32mI (466488) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (466488) example: 01235235235235235235235235235235235[0m
+[0;32mI (466498) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (466498) example: 01235235235235235235235235235235235235[0m
+[0;32mI (466508) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (466508) example: 01235235235235235235235235235235235235235[0m
+[0;32mI (466518) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (466518) example: 01235235235235235235235235235235235235235235[0m
+[0;32mI (466528) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (466528) example: 01235235235235235235235235235235235235235235235[0m
+[0;32mI (466538) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (466538) example: 012352352352352352352352352352352352352352352355[0m
+[1;31mE (477198) example: recv failed: errno 104[0m
+[1;31mE (477198) example: Shutting down socket and restarting...[0m
+[0;32mI (477198) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (477408) example: Successfully connected[0m
+[0;32mI (477608) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (477608) example: 0112345[0m
+[0;32mI (477818) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (477818) example: 011234512345[0m
+[0;32mI (478018) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (478018) example: 01123451234512345[0m
+[0;32mI (478228) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (478228) example: 0112345123451234512345[0m
+[0;32mI (478428) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (478428) example: 011234512345123451234512345[0m
+[0;32mI (478638) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (478638) example: 01123451234512345123451234512345[0m
+[0;32mI (478838) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (478838) example: 0112345123451234512345123451234512345[0m
+[0;32mI (479048) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (479048) example: 011234512345123451234512345123451234512345[0m
+[0;32mI (479248) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (479248) example: 01123451234512345123451234512345123451234512345[0m
+[0;32mI (479458) example: Received 52 bytes from 192.168.2.124:[0m
+[0;32mI (479458) example: 0112345123451234512345123451234512345123451234512345[0m
+[1;31mE (485698) example: recv failed: errno 104[0m
+[1;31mE (485698) example: Shutting down socket and restarting...[0m
+[0;32mI (485698) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (485908) example: Successfully connected[0m
+[0;32mI (485958) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (485958) example: 015[0m
+[0;32mI (485968) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (485968) example: 0155[0m
+[0;32mI (485968) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (485968) example: 01555[0m
+[0;32mI (485978) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (485978) example: 015555[0m
+[0;32mI (485988) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (485988) example: 0155555[0m
+[0;32mI (486008) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (486008) example: 01555555[0m
+[0;32mI (486018) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (486018) example: 015555555[0m
+[0;32mI (486028) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (486028) example: 0155555555[0m
+[0;32mI (486038) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (486038) example: 01555555555[0m
+[0;32mI (486038) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (486038) example: 015555555555[0m
+[0;32mI (486058) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (486058) example: 0155555555555[0m
+[0;32mI (486068) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (486068) example: 01555555555555[0m
+[0;32mI (486078) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (486078) example: 015555555555555[0m
+[0;32mI (486088) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (486088) example: 0155555555555555[0m
+[0;32mI (486088) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (486098) example: 01555555555555555[0m
+[0;32mI (486108) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (486108) example: 015555555555555555[0m
+[0;32mI (486118) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (486118) example: 0155555555555555555[0m
+[0;32mI (486128) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (486128) example: 01555555555555555555[0m
+[0;32mI (486138) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (486138) example: 015555555555555555555[0m
+[0;32mI (486148) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (486158) example: 0155555555555555555555[0m
+[0;32mI (486158) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (486158) example: 01555555555555555555555[0m
+[0;32mI (486168) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (486168) example: 015555555555555555555555[0m
+[0;32mI (486178) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (486178) example: 0155555555555555555555555[0m
+[0;32mI (486188) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (486188) example: 01555555555555555555555555[0m
+[0;32mI (486198) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (486198) example: 015555555555555555555555555[0m
+[0;32mI (486218) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (486218) example: 0155555555555555555555555555[0m
+[0;32mI (486228) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (486228) example: 01555555555555555555555555555[0m
+[0;32mI (486238) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (486238) example: 015555555555555555555555555555[0m
+[0;32mI (486248) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (486248) example: 0155555555555555555555555555555[0m
+[0;32mI (486258) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (486258) example: 01555555555555555555555555555555[0m
+[0;32mI (486268) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (486268) example: 015555555555555555555555555555555[0m
+[0;32mI (486278) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (486278) example: 0155555555555555555555555555555555[0m
+[0;32mI (486288) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (486288) example: 01555555555555555555555555555555555[0m
+[0;32mI (486298) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (486298) example: 015555555555555555555555555555555555[0m
+[0;32mI (486318) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (486318) example: 0155555555555555555555555555555555555[0m
+[0;32mI (486328) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (486328) example: 01555555555555555555555555555555555555[0m
+[0;32mI (486328) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (486328) example: 015555555555555555555555555555555555555[0m
+[0;32mI (486348) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (486348) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (486358) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (486358) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (486368) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (486368) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (486378) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (486378) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (486388) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (486388) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (486398) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (486398) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (486418) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (486428) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (486428) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (486428) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (486438) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (486438) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (497068) example: recv failed: errno 104[0m
+[1;31mE (497068) example: Shutting down socket and restarting...[0m
+[0;32mI (497068) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (497088) example: Successfully connected[0m
+[0;32mI (497098) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (497098) example: 015[0m
+[0;32mI (497108) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (497108) example: 0155[0m
+[0;32mI (497118) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (497118) example: 01555[0m
+[0;32mI (497118) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (497118) example: 015555[0m
+[0;32mI (497138) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (497138) example: 0155555[0m
+[0;32mI (497138) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (497138) example: 01555555[0m
+[0;32mI (497148) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (497148) example: 015555555[0m
+[0;32mI (497178) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (497178) example: 0155555555[0m
+[0;32mI (497178) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (497178) example: 01555555555[0m
+[0;32mI (497188) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (497188) example: 015555555555[0m
+[0;32mI (497198) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (497198) example: 0155555555555[0m
+[0;32mI (497218) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (497218) example: 01555555555555[0m
+[0;32mI (497218) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (497218) example: 015555555555555[0m
+[0;32mI (497238) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (497238) example: 0155555555555555[0m
+[0;32mI (497248) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (497248) example: 01555555555555555[0m
+[0;32mI (497258) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (497258) example: 015555555555555555[0m
+[0;32mI (497278) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (497278) example: 0155555555555555555[0m
+[0;32mI (497288) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (497288) example: 01555555555555555555[0m
+[0;32mI (497288) example: Received 21 bytes from 192.168.2.124:[0m
+[0;32mI (497298) example: 015555555555555555555[0m
+[0;32mI (497588) example: Received 22 bytes from 192.168.2.124:[0m
+[0;32mI (497588) example: 0155555555555555555555[0m
+[0;32mI (497788) example: Received 23 bytes from 192.168.2.124:[0m
+[0;32mI (497788) example: 01555555555555555555555[0m
+[0;32mI (497798) example: Received 24 bytes from 192.168.2.124:[0m
+[0;32mI (497798) example: 015555555555555555555555[0m
+[0;32mI (497808) example: Received 25 bytes from 192.168.2.124:[0m
+[0;32mI (497808) example: 0155555555555555555555555[0m
+[0;32mI (497818) example: Received 26 bytes from 192.168.2.124:[0m
+[0;32mI (497818) example: 01555555555555555555555555[0m
+[0;32mI (497838) example: Received 27 bytes from 192.168.2.124:[0m
+[0;32mI (497838) example: 015555555555555555555555555[0m
+[0;32mI (497838) example: Received 28 bytes from 192.168.2.124:[0m
+[0;32mI (497838) example: 0155555555555555555555555555[0m
+[0;32mI (497848) example: Received 29 bytes from 192.168.2.124:[0m
+[0;32mI (497848) example: 01555555555555555555555555555[0m
+[0;32mI (497858) example: Received 30 bytes from 192.168.2.124:[0m
+[0;32mI (497858) example: 015555555555555555555555555555[0m
+[0;32mI (497868) example: Received 31 bytes from 192.168.2.124:[0m
+[0;32mI (497868) example: 0155555555555555555555555555555[0m
+[0;32mI (497898) example: Received 32 bytes from 192.168.2.124:[0m
+[0;32mI (497898) example: 01555555555555555555555555555555[0m
+[0;32mI (497908) example: Received 33 bytes from 192.168.2.124:[0m
+[0;32mI (497908) example: 015555555555555555555555555555555[0m
+[0;32mI (497908) example: Received 34 bytes from 192.168.2.124:[0m
+[0;32mI (497908) example: 0155555555555555555555555555555555[0m
+[0;32mI (497928) example: Received 35 bytes from 192.168.2.124:[0m
+[0;32mI (497928) example: 01555555555555555555555555555555555[0m
+[0;32mI (497938) example: Received 36 bytes from 192.168.2.124:[0m
+[0;32mI (497938) example: 015555555555555555555555555555555555[0m
+[0;32mI (497948) example: Received 37 bytes from 192.168.2.124:[0m
+[0;32mI (497948) example: 0155555555555555555555555555555555555[0m
+[0;32mI (497958) example: Received 38 bytes from 192.168.2.124:[0m
+[0;32mI (497958) example: 01555555555555555555555555555555555555[0m
+[0;32mI (497968) example: Received 39 bytes from 192.168.2.124:[0m
+[0;32mI (497968) example: 015555555555555555555555555555555555555[0m
+[0;32mI (497988) example: Received 40 bytes from 192.168.2.124:[0m
+[0;32mI (497988) example: 0155555555555555555555555555555555555555[0m
+[0;32mI (497998) example: Received 41 bytes from 192.168.2.124:[0m
+[0;32mI (497998) example: 01555555555555555555555555555555555555555[0m
+[0;32mI (498008) example: Received 42 bytes from 192.168.2.124:[0m
+[0;32mI (498008) example: 015555555555555555555555555555555555555555[0m
+[0;32mI (498018) example: Received 43 bytes from 192.168.2.124:[0m
+[0;32mI (498018) example: 0155555555555555555555555555555555555555555[0m
+[0;32mI (498038) example: Received 44 bytes from 192.168.2.124:[0m
+[0;32mI (498038) example: 01555555555555555555555555555555555555555555[0m
+[0;32mI (498048) example: Received 45 bytes from 192.168.2.124:[0m
+[0;32mI (498048) example: 015555555555555555555555555555555555555555555[0m
+[0;32mI (498058) example: Received 46 bytes from 192.168.2.124:[0m
+[0;32mI (498058) example: 0155555555555555555555555555555555555555555555[0m
+[0;32mI (498068) example: Received 47 bytes from 192.168.2.124:[0m
+[0;32mI (498068) example: 01555555555555555555555555555555555555555555555[0m
+[0;32mI (498088) example: Received 48 bytes from 192.168.2.124:[0m
+[0;32mI (498088) example: 015555555555555555555555555555555555555555555555[0m
+[1;31mE (544688) example: recv failed: errno 104[0m
+[1;31mE (544688) example: Shutting down socket and restarting...[0m
+[0;32mI (544688) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (544888) example: Successfully connected[0m
+[0;32mI (545098) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (545098) example: 015[0m
+[0;32mI (545298) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (545298) example: 0155[0m
+[0;32mI (545498) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (545508) example: 01555[0m
+[0;32mI (545708) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (545708) example: 015555[0m
+[0;32mI (545908) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (545918) example: 0155555[0m
+[0;32mI (546118) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (546118) example: 01555555[0m
+[0;32mI (546328) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (546328) example: 015555555[0m
+[0;32mI (546528) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (546528) example: 0155555555[0m
+[0;32mI (546728) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (546738) example: 01555555555[0m
+[0;32mI (546938) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (546938) example: 015555555555[0m
+[0;32mI (547138) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (547138) example: 0155555555555[0m
+[0;32mI (547348) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (547348) example: 01555555555555[0m
+[0;32mI (547548) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (547548) example: 015555555555555[0m
+[0;32mI (547758) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (547758) example: 0155555555555555[0m
+[0;32mI (547958) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (547958) example: 01555555555555555[0m
+[0;32mI (548168) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (548168) example: 015555555555555555[0m
+[0;32mI (548368) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (548368) example: 0155555555555555555[0m
+[0;32mI (548578) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (548578) example: 01555555555555555555[0m
+[1;31mE (554728) example: recv failed: errno 104[0m
+[1;31mE (554728) example: Shutting down socket and restarting...[0m
+[0;32mI (554728) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (554928) example: Successfully connected[0m
+[0;32mI (555128) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (555128) example: 011235[0m
+[0;32mI (555338) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (555338) example: 0112351235[0m
+[0;32mI (555538) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (555538) example: 01123512351235[0m
+[0;32mI (555748) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (555748) example: 011235123512351235[0m
+[1;31mE (566188) example: recv failed: errno 104[0m
+[1;31mE (566188) example: Shutting down socket and restarting...[0m
+[0;32mI (566188) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (566398) example: Successfully connected[0m
+[0;32mI (566408) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (566408) example: 0112345[0m
+[0;32mI (566418) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (566418) example: 011234512345[0m
+[0;32mI (566438) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (566438) example: 01123451234512345[0m
+[1;31mE (576848) example: recv failed: errno 104[0m
+[1;31mE (576848) example: Shutting down socket and restarting...[0m
+[0;32mI (576848) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (576858) example: Successfully connected[0m
+[0;32mI (576878) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (576878) example: 015[0m
+[0;32mI (576888) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (576888) example: 0155[0m
+[0;32mI (576898) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (576898) example: 01555[0m
+[0;32mI (576908) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (576908) example: 015555[0m
+[0;32mI (576918) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (576918) example: 0155555[0m
+[0;32mI (576938) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (576938) example: 01555555[0m
+[0;32mI (576948) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (576948) example: 015555555[0m
+[0;32mI (576958) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (576958) example: 0155555555[0m
+[0;32mI (576968) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (576968) example: 01555555555[0m
+[0;32mI (576988) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (576988) example: 015555555555[0m
+[0;32mI (576988) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (576988) example: 0155555555555[0m
+[0;32mI (576998) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (576998) example: 01555555555555[0m
+[0;32mI (577008) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (577008) example: 015555555555555[0m
+[0;32mI (577018) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (577018) example: 0155555555555555[0m
+[0;32mI (577028) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (577028) example: 01555555555555555[0m
+[1;31mE (587688) example: recv failed: errno 104[0m
+[1;31mE (587688) example: Shutting down socket and restarting...[0m
+[0;32mI (587698) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (587798) example: Successfully connected[0m
+[0;32mI (587818) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (587818) example: 012345[0m
+[0;32mI (587818) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (587818) example: 0123452345[0m
+[0;32mI (587828) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (587828) example: 01234523452345[0m
+[0;32mI (587848) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (587848) example: 012345234523452345[0m
+[1;31mE (598358) example: recv failed: errno 104[0m
+[1;31mE (598358) example: Shutting down socket and restarting...[0m
+[0;32mI (598358) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (598368) example: Successfully connected[0m
+[0;32mI (598388) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (598388) example: 0112345[0m
+[0;32mI (598398) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (598398) example: 011234512345[0m
+[0;32mI (598408) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (598408) example: 01123451234512345[0m
+[1;31mE (608998) example: recv failed: errno 104[0m
+[1;31mE (608998) example: Shutting down socket and restarting...[0m
+[0;32mI (608998) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (609018) example: Successfully connected[0m
+[0;32mI (609028) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (609028) example: 015[0m
+[0;32mI (609038) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (609038) example: 0155[0m
+[0;32mI (609048) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (609048) example: 01555[0m
+[0;32mI (609058) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (609058) example: 015555[0m
+[0;32mI (609068) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (609068) example: 0155555[0m
+[0;32mI (609078) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (609078) example: 01555555[0m
+[0;32mI (609088) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (609088) example: 015555555[0m
+[0;32mI (609108) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (609108) example: 0155555555[0m
+[0;32mI (609118) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (609118) example: 01555555555[0m
+[0;32mI (609128) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (609128) example: 015555555555[0m
+[0;32mI (609138) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (609138) example: 0155555555555[0m
+[0;32mI (609148) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (609148) example: 01555555555555[0m
+[0;32mI (609158) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (609158) example: 015555555555555[0m
+[0;32mI (609168) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (609168) example: 0155555555555555[0m
+[0;32mI (609168) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (609168) example: 01555555555555555[0m
+[0;32mI (609178) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (609178) example: 015555555555555555[0m
+[0;32mI (609198) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (609198) example: 0155555555555555555[0m
+[0;32mI (609208) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (609208) example: 01555555555555555555[0m
+[1;31mE (619638) example: recv failed: errno 104[0m
+[1;31mE (619638) example: Shutting down socket and restarting...[0m
+[0;32mI (619648) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (619848) example: Successfully connected[0m
+[0;32mI (620058) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (620058) example: 015[0m
+[0;32mI (620258) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (620258) example: 0155[0m
+[0;32mI (620468) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (620468) example: 01555[0m
+[0;32mI (620678) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (620678) example: 015555[0m
+[0;32mI (620888) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (620898) example: 0155555[0m
+[0;32mI (621078) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (621078) example: 01555555[0m
+[0;32mI (621278) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (621278) example: 015555555[0m
+[0;32mI (621488) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (621488) example: 0155555555[0m
+[0;32mI (621688) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (621698) example: 01555555555[0m
+[0;32mI (621898) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (621898) example: 015555555555[0m
+[0;32mI (622108) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (622108) example: 0155555555555[0m
+[0;32mI (622308) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (622308) example: 01555555555555[0m
+[0;32mI (622508) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (622508) example: 015555555555555[0m
+[0;32mI (622718) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (622718) example: 0155555555555555[0m
+[0;32mI (622918) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (622918) example: 01555555555555555[0m
+[0;32mI (623128) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (623128) example: 015555555555555555[0m
+[0;32mI (623338) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (623338) example: 0155555555555555555[0m
+[0;32mI (623538) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (623538) example: 01555555555555555555[0m
+[1;31mE (629498) example: recv failed: errno 104[0m
+[1;31mE (629498) example: Shutting down socket and restarting...[0m
+[0;32mI (629508) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (629518) example: Successfully connected[0m
+[0;32mI (629528) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (629528) example: 015[0m
+[0;32mI (629538) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (629538) example: 0155[0m
+[0;32mI (629548) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (629548) example: 01555[0m
+[0;32mI (629558) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (629558) example: 015555[0m
+[0;32mI (629578) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (629578) example: 0155555[0m
+[0;32mI (629588) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (629588) example: 01555555[0m
+[0;32mI (629608) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (629608) example: 015555555[0m
+[0;32mI (629608) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (629608) example: 0155555555[0m
+[0;32mI (629628) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (629628) example: 01555555555[0m
+[0;32mI (629638) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (629638) example: 015555555555[0m
+[0;32mI (629648) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (629648) example: 0155555555555[0m
+[0;32mI (629658) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (629658) example: 01555555555555[0m
+[0;32mI (629658) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (629668) example: 015555555555555[0m
+[0;32mI (629688) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (629688) example: 0155555555555555[0m
+[0;32mI (629698) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (629698) example: 01555555555555555[0m
+[0;32mI (629708) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (629708) example: 015555555555555555[0m
+[0;32mI (629718) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (629718) example: 0155555555555555555[0m
+[0;32mI (629728) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (629728) example: 01555555555555555555[0m
+[1;31mE (640128) example: recv failed: errno 104[0m
+[1;31mE (640128) example: Shutting down socket and restarting...[0m
+[0;32mI (640138) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (640348) example: Successfully connected[0m
+[0;32mI (640538) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (640538) example: 015[0m
+[0;32mI (640598) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (640598) example: 0155[0m
+[0;32mI (640618) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (640618) example: 01555[0m
+[0;32mI (640648) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (640648) example: 015555[0m
+[0;32mI (640748) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (640748) example: 0155555[0m
+[0;32mI (640758) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (640758) example: 01555555[0m
+[0;32mI (640778) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (640778) example: 015555555[0m
+[0;32mI (640788) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (640788) example: 0155555555[0m
+[0;32mI (640798) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (640798) example: 01555555555[0m
+[0;32mI (640808) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (640808) example: 015555555555[0m
+[0;32mI (640818) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (640818) example: 0155555555555[0m
+[0;32mI (640818) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (640818) example: 01555555555555[0m
+[0;32mI (640848) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (640848) example: 015555555555555[0m
+[0;32mI (640848) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (640848) example: 0155555555555555[0m
+[0;32mI (640858) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (640858) example: 01555555555555555[0m
+[0;32mI (640868) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (640868) example: 015555555555555555[0m
+[0;32mI (640878) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (640888) example: 0155555555555555555[0m
+[0;32mI (640888) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (640888) example: 01555555555555555555[0m
+[1;31mE (651508) example: recv failed: errno 104[0m
+[1;31mE (651508) example: Shutting down socket and restarting...[0m
+[0;32mI (651508) example: Socket created, connecting to 192.168.2.124:7777[0m
+[0;32mI (651518) example: Successfully connected[0m
+[0;32mI (651538) example: Received 3 bytes from 192.168.2.124:[0m
+[0;32mI (651538) example: 015[0m
+[0;32mI (651548) example: Received 4 bytes from 192.168.2.124:[0m
+[0;32mI (651548) example: 0155[0m
+[0;32mI (651548) example: Received 5 bytes from 192.168.2.124:[0m
+[0;32mI (651548) example: 01555[0m
+[0;32mI (651558) example: Received 6 bytes from 192.168.2.124:[0m
+[0;32mI (651558) example: 015555[0m
+[0;32mI (651568) example: Received 7 bytes from 192.168.2.124:[0m
+[0;32mI (651568) example: 0155555[0m
+[0;32mI (651578) example: Received 8 bytes from 192.168.2.124:[0m
+[0;32mI (651578) example: 01555555[0m
+[0;32mI (651638) example: Received 9 bytes from 192.168.2.124:[0m
+[0;32mI (651638) example: 015555555[0m
+[0;32mI (651648) example: Received 10 bytes from 192.168.2.124:[0m
+[0;32mI (651648) example: 0155555555[0m
+[0;32mI (651658) example: Received 11 bytes from 192.168.2.124:[0m
+[0;32mI (651658) example: 01555555555[0m
+[0;32mI (651668) example: Received 12 bytes from 192.168.2.124:[0m
+[0;32mI (651668) example: 015555555555[0m
+[0;32mI (651668) example: Received 13 bytes from 192.168.2.124:[0m
+[0;32mI (651668) example: 0155555555555[0m
+[0;32mI (651678) example: Received 14 bytes from 192.168.2.124:[0m
+[0;32mI (651678) example: 01555555555555[0m
+[0;32mI (651708) example: Received 15 bytes from 192.168.2.124:[0m
+[0;32mI (651708) example: 015555555555555[0m
+[0;32mI (651708) example: Received 16 bytes from 192.168.2.124:[0m
+[0;32mI (651718) example: 0155555555555555[0m
+[0;32mI (651718) example: Received 17 bytes from 192.168.2.124:[0m
+[0;32mI (651718) example: 01555555555555555[0m
+[0;32mI (651738) example: Received 18 bytes from 192.168.2.124:[0m
+[0;32mI (651738) example: 015555555555555555[0m
+[0;32mI (651748) example: Received 19 bytes from 192.168.2.124:[0m
+[0;32mI (651748) example: 0155555555555555555[0m
+[0;32mI (651758) example: Received 20 bytes from 192.168.2.124:[0m
+[0;32mI (651758) example: 01555555555555555555[0m
