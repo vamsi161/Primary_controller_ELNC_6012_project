@@ -17,5 +17,6 @@
   ],
   "files.associations": {
     "optional": "c"
-  }
+  },
+  "stm32-for-vscode.openOCDPath": false
 }

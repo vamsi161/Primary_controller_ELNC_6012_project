@@ -25,8 +25,8 @@
 #endif
 static const int RX_BUF_SIZE = 1024;
 
-#define TXD_PIN (GPIO_NUM_4)
-#define RXD_PIN (GPIO_NUM_5)
+#define TXD_PIN (GPIO_NUM_1)
+#define RXD_PIN (GPIO_NUM_3)
 
 
 #define PORT CONFIG_EXAMPLE_PORT
@@ -36,10 +36,12 @@ static const int RX_BUF_SIZE = 1024;
 #define WEIGHT_2 5
 #define TYPE_1 1
 #define TYPE_2 2
+#define TENTHPLACE 10
 static const char *TAG = "example";
 static const char *payload = "Message from ESP32 Vamsi ";
-
+static char messageRecv[1024];
 static char bufId[20];
+static char emptySlots[10];
 char prodID[10][10] = {"12345671","12345672" ,"12345673" ,"12345674" ,"12345675", "12345676","12345677","12345678" };
 typedef struct 
 {
@@ -51,6 +53,43 @@ typedef struct
 } product_t;
 
 product_t products[8];
+
+
+
+
+
+void sortData(char *msgPtr)
+{
+    int msgid = (msgPtr[0] - '0') * TENTHPLACE;
+    msgid += (msgPtr[1] - '0');
+
+    switch(msgid)
+    {
+        case 01:
+            // display empty slot data here
+            ESP_LOGI(TAG, "EMPTY SLOTS :");
+            
+            for(int index = 2; msgPtr[index] != '\0'; index++)
+            {
+                emptySlots[index - 2] = msgPtr[index] - '0';
+                ESP_LOGI(TAG, "%d", emptySlots[index - 2] );
+            }
+            break;
+        case 02:
+            // display spill ALERT HERE
+           ESP_LOGI(TAG, "ALERT:SPILL DETECTED");
+            break;
+        case 03:
+            //display TEMP ALERT HERE
+           // ESP_LOGI(TAG, "ALERT:TEMPERATURE EXCEEDING");
+            break;
+        default:
+            //DO NOTHING
+            break;
+
+    }
+}
+
 
 void initProducts(void)
 {
@@ -87,7 +126,7 @@ void initProducts(void)
     products[5].weight = WEIGHT_2;
     products[5].type = TYPE_2;
     products[5].frozen = TRUE;
-   strcpy(products[5].id,prodID[5]);
+    strcpy(products[5].id,prodID[5]);
     products[5].slot = 6;
 
     products[6].weight = WEIGHT_2;
@@ -115,19 +154,23 @@ void init(void)
         .source_clk = UART_SCLK_DEFAULT,
     };
     // We won't use a buffer for sending data.
-    uart_driver_install(UART_NUM_1, RX_BUF_SIZE * 2, 0, 0, NULL, 0);
-    uart_param_config(UART_NUM_1, &uart_config);
-    uart_set_pin(UART_NUM_1, TXD_PIN, RXD_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
+    uart_driver_install(UART_NUM_0, RX_BUF_SIZE * 2, 0, 0, NULL, 0);
+    uart_param_config(UART_NUM_0, &uart_config);
+    uart_set_pin(UART_NUM_0, TXD_PIN, RXD_PIN, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE);
 }
 void getSlot(char *buf)
 {
+    buf[strcspn(buf, "\r")] = '\0';
+    //ESP_LOGI(TAG, "data received: %s", buf);
     for(int index = 0; index<8;index++)
     {
-        if(!strcmp(buf,products[index].id))
+        if(strcmp(buf,prodID[index]) == FALSE)
         {
             //ESP_LOGI(RX_TASK_TAG, "product weight: %d product type: %d frozen: %d ID: '%s' slot: %d", products[index].weight,products[index].type,products[index].frozen,products[index].id,products[index].slot);
             //ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, products[index].weight,products[index].type,products[index].frozen,products[index].id,products[index].slot, ESP_LOG_INFO);
             // -------------------send data to lcd here------------------------------------------------//
+            ESP_LOGI(TAG, "PLACE PROD: %d SLOT", products[index].slot);
+
         }
     }
 
@@ -139,13 +182,14 @@ static void rx_task(void *arg)
     esp_log_level_set(RX_TASK_TAG, ESP_LOG_INFO);
     char* data = (char*) malloc(RX_BUF_SIZE + 1);
     while (1) {
-        const int rxBytes = uart_read_bytes(UART_NUM_1, data, RX_BUF_SIZE, 1000 / portTICK_PERIOD_MS);
+        const int rxBytes = uart_read_bytes(UART_NUM_0, data, RX_BUF_SIZE, 1000 / portTICK_PERIOD_MS);
         if (rxBytes > 0) {
             data[rxBytes] = 0;
             strcpy(bufId,data);
             getSlot(bufId);
-            //ESP_LOGI(RX_TASK_TAG, "Read %d bytes: '%s'", rxBytes, data);
-            //ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, data, rxBytes, ESP_LOG_INFO);
+            //ESP_LOGI(RX_TASK_TAG, " stored bytes: %s Read bytes: %s ",prodID[7],  bufId );
+            //ESP_LOG_BUFFER_HEXDUMP(RX_TASK_TAG, prodID[7],bufId, ESP_LOG_INFO);
+            
         }
     }
     free(data);
@@ -185,7 +229,8 @@ void tcp_client(void)
         }
         ESP_LOGI(TAG, "Successfully connected");
 
-        while (1) {
+        while (1) 
+        {
             int err = send(sock, payload, strlen(payload), 0);
             if (err < 0) {
                 ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
@@ -201,8 +246,11 @@ void tcp_client(void)
             // Data received
             else {
                 rx_buffer[len] = 0; // Null-terminate whatever we received and treat like a string
-                ESP_LOGI(TAG, "Received %d bytes from %s:", len, host_ip);
-                ESP_LOGI(TAG, "%s", rx_buffer);
+               // ESP_LOGI(TAG, "Received %d bytes from %s:", len, host_ip);
+               // ESP_LOGI(TAG, "%s", rx_buffer);
+                strcpy(messageRecv,rx_buffer);
+                sortData(messageRecv);
+
             }
         }
 
