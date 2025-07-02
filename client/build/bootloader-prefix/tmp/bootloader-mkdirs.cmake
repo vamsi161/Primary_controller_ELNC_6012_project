@@ -10,18 +10,18 @@ if(NOT EXISTS "C:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader/subp
   file(MAKE_DIRECTORY "C:/Espressif/frameworks/esp-idf-v5.4.1/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "C:/Users/balap/client/build/bootloader"
-  "C:/Users/balap/client/build/bootloader-prefix"
-  "C:/Users/balap/client/build/bootloader-prefix/tmp"
-  "C:/Users/balap/client/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/Users/balap/client/build/bootloader-prefix/src"
-  "C:/Users/balap/client/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/bootloader"
+  "D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/bootloader-prefix"
+  "D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/bootloader-prefix/tmp"
+  "D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/bootloader-prefix/src"
+  "D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/balap/client/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/balap/client/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

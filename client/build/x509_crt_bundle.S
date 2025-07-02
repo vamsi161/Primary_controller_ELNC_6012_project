@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/balap/client/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

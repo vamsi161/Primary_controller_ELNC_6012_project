@@ -14,6 +14,7 @@
 #include "esp_log.h"
 #include "driver/uart.h"
 #include "driver/gpio.h"
+#include "lcd20x4_driver.h"
 #if defined(CONFIG_EXAMPLE_SOCKET_IP_INPUT_STDIN)
 #include "addr_from_stdin.h"
 #endif
@@ -38,6 +39,7 @@ static const int RX_BUF_SIZE = 1024;
 #define TYPE_2 2
 #define TENTHPLACE 10
 static const char *TAG = "example";
+static const char *dummyPtr = "dummy";
 static const char *payload = "Message from ESP32 Vamsi ";
 static char messageRecv[1024];
 static char bufId[20];
@@ -63,6 +65,8 @@ void sortData(char *msgPtr)
     int msgid = (msgPtr[0] - '0') * TENTHPLACE;
     msgid += (msgPtr[1] - '0');
 
+
+
     switch(msgid)
     {
         case 01:
@@ -77,6 +81,7 @@ void sortData(char *msgPtr)
             break;
         case 02:
             // display spill ALERT HERE
+            lcd20x4_print(dummyPtr);
            ESP_LOGI(TAG, "ALERT:SPILL DETECTED");
             break;
         case 03:
@@ -201,6 +206,7 @@ void tcp_client(void)
     int addr_family = 0;
     int ip_protocol = 0;
     initProducts();
+    lcd20x4_init(I2C_NUM_0, GPIO_NUM_21,GPIO_NUM_22, 0x01);
     xTaskCreate(rx_task, "uart_rx_task", 1024 * 2, NULL, configMAX_PRIORITIES - 1, NULL);
     while (1) {
 #if defined(CONFIG_EXAMPLE_IPV4)

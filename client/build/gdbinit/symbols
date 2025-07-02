@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file C:/Users/balap/client/build/bootloader/bootloader.elf
+    add-symbol-file D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file C:/Users/balap/client/build/client.elf
+file D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/client.elf

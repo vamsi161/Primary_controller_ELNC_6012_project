@@ -1,2 +1,2 @@
-source C:/Users/balap/client/build/gdbinit/symbols
-source C:/Users/balap/client/build/gdbinit/connect
+source D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/gdbinit/symbols
+source D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/build/gdbinit/connect

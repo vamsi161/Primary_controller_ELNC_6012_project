@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/balap/client/main
+# Install script for directory: D:/Work/ESD3/25S/Project/primary_controller/Primary_controller_ELNC_6012_project/client/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: C:\Users\balap\client\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: D:\Work\ESD3\25S\Project\primary_controller\Primary_controller_ELNC_6012_project\client\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 
